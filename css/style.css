@@ -1,3 +1,4 @@
+/* This is a universal selector */
 *{
     margin: 0;
     padding: 0;
@@ -30,3 +31,10 @@
     background-color: #000000;
     color: white;
   }
+
+/* Body styling */
+body {
+  background-color: #ffffff;
+  font-family: 'Roboto', Helvetica ;
+
+}
