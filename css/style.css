@@ -3,6 +3,20 @@
     margin: 0;
     padding: 0;
 }
+/* Body styling */
+/* Font families availabel for CSS code 
+font-family: 'Amatic SC', cursive;
+font-family: 'Beau Rivage', cursive;
+font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Slab', serif;
+font-family: 'Source Code Pro', monospace;
+font-family: 'Ubuntu Mono', monospace;
+*/
+body {
+  background-color: #ffffff;
+  font-family: 'Roboto', Helvetica ;
+
+}
 
 /* Add a black background color to the top navigation */
 .topnav {
@@ -15,9 +29,10 @@
     float: right;
     color: #ffffff;
     text-align: center;
-    padding: 14px 16px;
+    padding: 8px;
     text-decoration: none;
-    font-size: 17px;
+    text-transform: uppercase;
+    font-size: 16px;
   }
   
   /* Change the color of links on hover */
@@ -31,10 +46,3 @@
     background-color: #000000;
     color: white;
   }
-
-/* Body styling */
-body {
-  background-color: #ffffff;
-  font-family: 'Roboto', Helvetica ;
-
-}
