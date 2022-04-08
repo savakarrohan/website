@@ -1,6 +1,8 @@
 /* importing other css files */
 @import url(images.css);
 
+/* Importing special styles trial */
+
 /* This is a universal selector */
 * {
   margin: 0;
