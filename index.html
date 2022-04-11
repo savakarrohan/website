@@ -19,13 +19,13 @@
     Roboto Slab
     Source Code Pro
     Ubuntu Mono -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?
     family=Amatic+SC:wght@400;700
     &family=Beau+Rivage&family=Roboto:wght@300
     &family=Roboto+Slab&family=Source+Code+Pro:ital@0;1
-    &family=Ubuntu+Mono:ital@0;1&display=swap" rel="stylesheet">
+    &family=Ubuntu+Mono:ital@0;1&display=swap" rel="stylesheet"> -->
 
     <!-- MathJax scripting questionably needed if i switch to markdown -->
     <script type="text/javascript" async
@@ -75,7 +75,8 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Design</a>
                             </li>
-                            <li class="nav-item dropdown">
+                            <!-- The next section is for the dropdown toggle -->
+                            <!-- <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button"
                                     data-bs-toggle="dropdown" aria-expanded="false">
                                     Dropdown
@@ -88,20 +89,61 @@
                                     </li>
                                     <li><a class="dropdown-item" href="#">Something else here</a></li>
                                 </ul>
-                            </li>
+                            </li> -->
                         </ul>
-                        <form class="d-flex">
+                        <!-- This section is for the search bar -->
+                        <!-- <form class="d-flex">
                             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                             <button class="btn btn-outline-success" type="submit">Search</button>
-                        </form>
+                        </form> -->
                     </div>
                 </div>
             </div>
         </nav>
     </div>
+    <!-- Main body of the website -->
+    <div class="container-fluid">
+        <p style="margin: 50px;"></p>
+        <div class="row align-items-start">
+            <div class="col">
+                One of three columns
+            </div>
+            <div class="col">
+                One of three columns
+            </div>
+            <div class="col">
+                One of three columns
+            </div>
+        </div>
+        <div class="row align-items-center">
+            <div class="col">
+                One of three columns
+            </div>
+            <div class="col">
+                One of three columns
+            </div>
+            <div class="col">
+                One of three columns
+            </div>
+        </div>
+        <div class="row align-items-end">
+            <div class="col">
+                One of three columns
+            </div>
+            <div class="col">
+                One of three columns
+            </div>
+            <div class="col">
+                Hey Ya fellas
+            </div>
+        </div>
+    </div>
+
+
     <!-- jQuery (Bootstrap JS plugins depend on it) -->
-    <script src="Bootstrap/js/bootstrap.js"></script>
-    <script src="js/script.jss"></script>
+    <script src="Bootstrap/js/bootstrap.js" defer></script>
+    <!-- Main javascript file -->
+    <script src="js/script.js" defer></script>
 </body>
 
 </html>
