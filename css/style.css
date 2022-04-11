@@ -21,6 +21,9 @@ body {
   background-attachment: fixed;
   -ms-overflow-style: none;
 }
+body::-webkit-scrollbar {
+  display: none;
+}
 /* inside offcanvas */
 #offcanvasNavbarLabel {
   color: white;
