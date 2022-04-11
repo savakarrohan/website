@@ -37,7 +37,7 @@
     <!-- Navigation bar
     I personally like the offCanvas method -->
     <div id="navigationBar">
-        <nav class="navbar navbar-dark bg-dark fixed-top">
+        <nav class="navbar navbar-dark bg-dark sticky-top">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
                     SAVAKAR ROHAN</a>
@@ -100,21 +100,35 @@
     </div>
     <!-- Main body of the website -->
     <div id="mainBody">
-        <div class="container-fluid">
-            <div class="row g-0 text-center">
-                <div class="col-10">
-                    <h1 class="display-1"> Hello World<br>
-                        this is <br>
-                        Rohan<br>
-                        Savakar</h1>
+        <div class="container-fluid mt-3">
+            <div class="row g-0">
+                <div class="col-10 d-flex justify-content-center align-items-center">
+                    <figure class="text-center">
+                        <blockquote class="blockquote">
+                            <p>If you can't explain it to a six year old, you don't understand it well enough.</p>
+                        </blockquote>
+                        <figcaption class="blockquote-footer">
+                            <cite title="Source Title">Albert Einstein</cite>
+                        </figcaption>
+                    </figure>
                 </div>
                 <div class="col-2">
                     <img id="rohanImg" src="img/IMG_2459 Full Frame.jpg" class="img-fluid rounded-3">
                 </div>
             </div>
-        </div>
-        <div class="container-fluid">
-            <div class="row g-0" id="horizontalDivider_01"></div>
+            <!-- Divider -->
+            <hr>
+            <!-- Link content, to add about me section above this -->
+            <div class="row g-1">
+                <div class="card" style="width: 18rem;">
+                    <img src="" class="card-img-top" alt="MENACE game">
+                    <div class="card-body">
+                        <h5 class="card-title">MENACE</h5>
+                        <p class="card-text">A physical computer to beat you in tic-tac-toe.</p>
+                        <a href="#" class="btn btn-primary">MENACE</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 

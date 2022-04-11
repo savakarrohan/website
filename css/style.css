@@ -27,23 +27,14 @@ body {
 }
 
 /* Main body front page, initial spacing from navbar */
-#mainBody {
+/* #mainBody {
   margin-top: 42.5px;
-}
+} */
 
-/* #rohanImg {
+#rohanImg {
   width: 100%;
-  float: right;
-  border: thick double black; */
-}
-
-#horizontalDivider_01 {
-  background-color: black;
-  width: 100%;
-  height: 20px;
+  border: thick double black;
 }
 
 /* Bootstrap elements changed here */
-/* .container-fluid {
-  padding-right: 0px;
-} */
+/* Do in second version */
