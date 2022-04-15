@@ -4,3 +4,6 @@
 #ignore the built sites of Jekyll
 *_site
 *.jekyll*
+
+#ignore Gemfile.lock
+Gemfile.lock
