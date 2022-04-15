@@ -1,2 +1,6 @@
 #ignore .vscode folder
 *.vscode
+
+#ignore the built sites of Jekyll
+*_site
+*.jekyll*
