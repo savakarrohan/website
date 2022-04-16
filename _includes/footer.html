@@ -5,13 +5,13 @@
             <div class="col-6">
                 <h5>Section</h5>
                 <ul class="nav flex-column">
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Home</a></li>
-                    <li class="nav-item mb-2"><a href="/pages/Default.html" class="nav-link p-0 text-white">Sports</a>
+                    {% for item in site.data.navigation %}
+                    <li class="nav-item mb-2">
+                        <a href="{{item.link}}" class="nav-link p-0 text-white">
+                            {{ item.name }}
+                        </a>
                     </li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Engineering</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Mathematics</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Optimization</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Art</a></li>
+                    {% endfor %}
                 </ul>
             </div>
 
