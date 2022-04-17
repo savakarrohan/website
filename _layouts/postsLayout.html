@@ -4,7 +4,21 @@ aboutMe: Short excerpt for the card
 inspiration: From where I was inspired 
 author: Who wrote the paper
 shortDescription: Should have results
-tags: All possible tags-->
+tags: All possible tags
+_links: All further reading links
+
+---copyPasta---
+
+title_01:
+aboutMe:
+inspiration:
+author:
+shortDescription:
+tags:
+_links:
+
+---End of comments---
+-->
 
 
 <!doctype html>
@@ -94,6 +108,9 @@ tags: All possible tags-->
                     <div class="p-4">
                         <h4 class="fst-italic">Further reading</h4>
                         <ol class="list-unstyled">
+                            {% for _links in post._links %}
+                            <li>a href="{{ _links }}">{{ _links }}</a></li>
+                            {% endfor %}
                             <li><a href="#">GitHub</a></li>
                             <li><a href="#">Twitter</a></li>
                             <li><a href="#">Facebook</a></li>
