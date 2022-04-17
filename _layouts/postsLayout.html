@@ -2,11 +2,14 @@
 title01: Top most title on card
 aboutMe: Short excerpt for the card
 inspiration: From where I was inspired 
+             should start from Inspired by
 author: Who wrote the paper
 shortDescription: Should have results
 tags: All possible tags
 _links: All further reading links
-
+img01: Home page image
+img02:blog post image
+img03: additional
 ---copyPasta---
 
 title01:
@@ -16,6 +19,9 @@ author:
 shortDescription:
 tags:
 _links:
+img01:
+img02:
+img03:
 
 ---End of comments---
 -->
@@ -115,7 +121,7 @@ _links:
 
                 <article class="blog-post">
                     <h2 class="blog-post-title">{{title01}}</h2>
-                    <p class="blog-post-meta">{{ page.date | date_to_string }} by <a href="#">{{page.author}}</a></p>
+                    <p class="blog-post-meta">{{ page.date | date_to_string }} by {{page.author}}</p>
                     {{content}}
                 </article>
 
