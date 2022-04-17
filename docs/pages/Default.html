@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial scale=1.0" charset="utf-8">
+    <meta name="descripton" content=" A portfolio page of the mechanical engineer Rohan Savakar">
+    <meta http-equiv="pragma" content="no-cache" />
+    <title>Rohan Savakar's Blog and Portfolio</title>
+
+    <!-- Stylesheet from Everywhere -->
+    <link rel="stylesheet" href="/Bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+    <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+
+    <!-- Font family of all Google fonts
+    List of fonts:
+    Amatic Sc
+    Beau Rivage
+    Roboto
+    Roboto Slab
+    Source Code Pro
+    Ubuntu Mono -->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?
+    family=Amatic+SC:wght@400;700
+    &family=Beau+Rivage&family=Roboto:wght@300
+    &family=Roboto+Slab&family=Source+Code+Pro:ital@0;1
+    &family=Ubuntu+Mono:ital@0;1&display=swap" rel="stylesheet"> -->
+
+    <!-- MathJax scripting questionably needed if i switch to markdown -->
+    <script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML">
+        </script>
+</head>
+
+<body>
+    <!-- Navigation bar
+    I personally like the offCanvas method -->
+    <div id="navigationBar">
+        <nav class="navbar navbar-dark navbar-expand-md bg-dark sticky-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    Savakar Rohan</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Rohan Savakar</h5>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Sports</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Engineering</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Mathematics</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Optimization</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Art</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- Main body of the website -->
+    <div id="mainBody">
+        <div class="container mt-3">
+            <div class="row g-0">
+                <div class="col-md-9 d-flex justify-content-center align-items-center">
+                    <figure class="text-center">
+                        <blockquote class="blockquote fs-3">
+                            <p>If you can't explain it to a six year old, you don't understand it well enough.</p>
+                        </blockquote>
+                        <figcaption class="blockquote-footer">
+                            <cite title="Source Title">Albert Einstein</cite>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-md-3">
+                    <img id="rohanImg" src="/img/IMG_2459 Full Frame.jpg" class="img-fluid rounded-3">
+                </div>
+            </div>
+            <!-- Divider -->
+            <hr>
+            <div class="container">
+                <h1 class="display-5 text-center">
+                    About me
+                </h1>
+                <p class=" lead text-center">
+                    I take a special liking to solving partial differential equations using techniques of FEA, FDM, yada
+                    yada yada. As a mechanical engineer I give great importance to art and design evident in my artistic
+                    drawings and furniture. I am craving to learn techniques in structural topology
+                    optimization. I intend to use my skills in sports and engineering to develop better sporting
+                    equipment.
+                </p>
+            </div>
+
+            <hr>
+            <!-- Link content, to add about me section above this -->
+            <div class="row g-5">
+                <div class="col-md-4 ">
+                    <div class="card">
+                        <img src="/img/01_Menace/01_tic-tac-toe.png" class="card-img-top" alt="MENACE game">
+                        <div class="card-body">
+                            <h5 class="card-title">MENACE</h5>
+                            <p class="card-text">A physical computer to beat you in tic-tac-toe.</p>
+                            <a href="pages/menace/page_01.html" class="btn btn-dark">MENACE</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card" aria-hidden="true">
+                        <img src="/img/01_Menace/01_tic-tac-toe.png" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title placeholder-glow">
+                                <span class="placeholder col-6"></span>
+                            </h5>
+                            <p class="card-text placeholder-glow">
+                                <span class="placeholder col-8"></span>
+                            </p>
+                            <a href="#" tabindex="-1" class="btn btn-dark disabled placeholder col-6"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card" aria-hidden="true">
+                        <img src="/img/01_Menace/01_tic-tac-toe.png" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title placeholder-glow">
+                                <span class="placeholder col-6"></span>
+                            </h5>
+                            <p class="card-text placeholder-glow">
+                                <span class="placeholder col-8"></span>
+                            </p>
+                            <a href="#" tabindex="-1" class="btn btn-dark disabled placeholder col-6"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+        </div>
+
+        <!-- Footer -->
+        <div class="container-fluid bg-dark text-white">
+            <footer class="py-4">
+                <div class="row justify-content-around">
+                    <div class="col-6">
+                        <h5>Section</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Home</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Sports</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Engineering</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Mathematics</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Optimization</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Art</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-3">
+                        <form>
+                            <h5>Subscribe to my Posts</h5>
+                            <p>Monthly digest of whats new and exciting from us.</p>
+                            <div class="d-flex w-100 gap-2">
+                                <label for="newsletter1" class="visually-hidden">Email address</label>
+                                <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                                <button class="btn btn-primary btn-dark" type="button">Subscribe</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="d-flex justify-content-around py-4 my-4 border-top">
+                    <p>&copy; 2022 Rohan Savakar, All rights reserved. <br> All images designed by <a class="link-light"
+                            href='https://www.freepik.com'>freepik</a></p>
+                    <ul class="list-unstyled d-flex">
+                        <a class="text-white fs-3" href="https://twitter.com/RohanSavakar" target="_blank">
+                            <i class="bi-twitter"></i>
+                        </a>
+                        <li class="ms-3">
+                            <a class="text-white fs-3" href="#">
+                                <i class="bi-github"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <!-- jQuery (Bootstrap JS plugins depend on it) -->
+    <script src="/Bootstrap/js/bootstrap.js" defer></script>
+    <!-- Main javascript file -->
+    <script src="/js/script.js" defer></script>
+</body>
+
+</html>
