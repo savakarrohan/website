@@ -1,5 +1,5 @@
 <!-- Data required for this layout
-title_01: Top most title on card
+title01: Top most title on card
 aboutMe: Short excerpt for the card
 inspiration: From where I was inspired 
 author: Who wrote the paper
@@ -9,7 +9,7 @@ _links: All further reading links
 
 ---copyPasta---
 
-title_01:
+title01:
 aboutMe:
 inspiration:
 author:
@@ -37,7 +37,7 @@ _links:
 
 
     <!-- Bootstrap core CSS -->
-    <link href="/bootstrap.min.css" rel="stylesheet">
+    <link href="/Bootstrap/css/bootstrap.css" rel="stylesheet">
 
     <style>
         .bd-placeholder-img {
@@ -59,16 +59,50 @@ _links:
     <!-- Custom styles for this template -->
     <link href="https://fonts.googleapis.com/css?family=Playfair&#43;Display:700,900&amp;display=swap" rel="stylesheet">
     <!-- Custom styles for this template -->
-    <link href="blog.css" rel="stylesheet">
+    <link href="/Bootstrap/css/bootstrap.rtl.css" rel="stylesheet">
 </head>
 
 <body>
 
+    <!-- Navigation bar
+    I personally like the offCanvas method -->
+    <div id="navigationBar">
+        <nav class="navbar navbar-dark navbar-expand-md bg-dark sticky-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/index.html">
+                    Savakar Rohan</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Rohan Savakar</h5>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            {% for item in site.data.navigation %}
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="{{item.link}}">
+                                    {{item.name}}
+                                </a>
+                            </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
     <main class="container">
         <div class="p-4 p-md-5 mb-4 mt-4 text-white rounded bg-dark">
             <div class="col-md-6 px-0">
-                <h1 class="display-4 fst-italic">{{title_01}}</h1>
-                <p class="lead my-3">{{aboutMe}}</p>
+                <h1 class="display-4 fst-italic">{{ page.title01 }}</h1>
+                <p class="lead my-3">{{ page.aboutMe }}</p>
                 <p class="lead mb-0"><a href="#" class="text-white fw-bold">Continue reading...</a></p>
             </div>
         </div>
@@ -76,12 +110,12 @@ _links:
         <div class="row g-5">
             <div class="col-md-8">
                 <h3 class="pb-4 mb-4 fst-italic border-bottom">
-                    {{inspiration}}
+                    {{page.inspiration}}
                 </h3>
 
                 <article class="blog-post">
-                    <h2 class="blog-post-title">{{title_01}</h2>
-                    <p class="blog-post-meta">{{ page.date | date_to_string }} by <a href="#">Mark</a></p>
+                    <h2 class="blog-post-title">{{title01}}</h2>
+                    <p class="blog-post-meta">{{ page.date | date_to_string }} by <a href="#">{{page.author}}</a></p>
                     {{content}}
                 </article>
 
@@ -92,14 +126,14 @@ _links:
                     <div class="p-4 mb-3 bg-light rounded">
                         <h4 class="fst-italic">Short description</h4>
                         <p class="mb-0">
-                            {{shortDescription}}
+                            {{ page.shortDescription }}
                         </p>
                     </div>
 
                     <div class="p-4">
                         <h4 class="fst-italic">Tags</h4>
                         <ol class="list-unstyled mb-0">
-                            {% for tag in post.tags %}
+                            {% for tag in page.tags %}
                             <li>#{{ tag }}</li>
                             {% endfor %}
                         </ol>
@@ -108,8 +142,8 @@ _links:
                     <div class="p-4">
                         <h4 class="fst-italic">Further reading</h4>
                         <ol class="list-unstyled">
-                            {% for _links in post._links %}
-                            <li>a href="{{ _links }}">{{ _links }}</a></li>
+                            {% for _links in page._links %}
+                            <li><a href="{{ _links }}">{{ _links }}</a></li>
                             {% endfor %}
                         </ol>
                     </div>
