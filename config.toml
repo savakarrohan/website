@@ -1,3 +1,4 @@
 baseURL = "http://example.org/"
 languageCode = "en-us"
 title = "Savakar Rohan's site"
+theme = "Bootstrap_01"
