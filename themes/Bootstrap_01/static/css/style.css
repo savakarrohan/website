@@ -13,9 +13,9 @@ font-family: 'Roboto Slab', serif;
 font-family: 'Source Code Pro', monospace;
 font-family: 'Ubuntu Mono', monospace;
 */
-body {
+#mainBody {
   /* background-image: url(../img/Background_01/FullBackground_01.png); */
-  background-color: azure;
+  background-color: rgb(255, 255, 255);
   width: 100%;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -37,6 +37,11 @@ body::-webkit-scrollbar {
 #rohanImg {
   width: 100%;
   border: thick double black;
+}
+
+/* Blog Post colouring */
+.blog-post {
+  background-color: white;
 }
 
 /* Bootstrap elements changed here */
