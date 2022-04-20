@@ -3,12 +3,23 @@ title: "MENACE"
 Date: 2022-04-20T17:42:09+05:30
 Draft: false
 # layout: #select between art, contact, engineering, mathematics, optimization, sports
-# attention: #A short sentence quirky about it.
-# inspiration: #Inspiration
+attention: A Mechanical computer to learn the game of tic-tac toe
+inspiration: Inspired by Matthew Scroggs Blog
 author: Savakar Rohan #if any collaboration
-# shortDescription: # Description
-# tags: # Add as many tags as possible; Mechanical Computer Learning tic-tac-toe noughts&crosses Donald Mitchie noughts&crosses
-# _links: #related links for the same; https://www.mscroggs.co.uk/blog/ https://people.csail.mit.edu/brooks/idocs/matchbox.pdf http://cs.williams.edu/~freund/cs136-073/GardnerHexapawn.pdf
+shortDescription: Reward the computer by increasing balls count if favourable, while reprimand it by removing balls if the state is not good.
+tags:
+  - Mechanical
+  - Computer
+  - Learning
+  - tic-tac-toe
+  - noughts&crosses
+  - Donald
+  - Mitchie
+  - noughts&crosses
+_links:
+  - https://www.mscroggs.co.uk/blog/
+  - https://people.csail.mit.edu/brooks/idocs/matchbox.pdf
+  - http://cs.williams.edu/~freund/cs136-073/GardnerHexapawn.pdf
 # img01: #all images so easier to write ; img/01_Menace/01_tic-tac-toe.png
 # img02:
 # img03:
@@ -22,11 +33,9 @@ During world war II when computers were essentially mechanical devices and women
 
 ## The Idea
 
-Copying one of his paper's paragraph first passage [^1] :
+Copying one of his paper's paragraph [2] :
 
 > A reason for being interested in games is that they provide a microcosm of intellectual activity in general. Those thought processes which we regard as being specifically human accomplishments—learning from experience, inductive reasoning, argument by analogy, the formation and testing of new hypotheses, and so on are brought into play even by simple games of mental skill. The problem of artificial intelligence consists in the reduction of these processes to the elementary operations of arithmetic and logic.
-
-[^1]: https://people.csail.mit.edu/brooks/idocs/matchbox.pdf
 
 One can imagine the game as a "sequential decision" process, the sequence of choices made during the various "states" of the game result in an outcome. The outcome then being assigned a value, (much like John Nash's theory of utility) which determines how fruitful the previous desicions are. As the device learns _from past experiences_ it receives _reinforcements_ on what is good and bad.
 
