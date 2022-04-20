@@ -1,0 +1,43 @@
+/* importing other css files */
+
+/* Importing special styles trial */
+
+/* This is a universal selector */
+
+/* Body styling */
+/* Font families availabel for CSS code 
+font-family: 'Amatic SC', cursive;
+font-family: 'Beau Rivage', cursive;
+font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Slab', serif;
+font-family: 'Source Code Pro', monospace;
+font-family: 'Ubuntu Mono', monospace;
+*/
+body {
+  /* background-image: url(../img/Background_01/FullBackground_01.png); */
+  background-color: azure;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  -ms-overflow-style: none;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+/* inside offcanvas */
+#offcanvasNavbarLabel {
+  color: white;
+}
+
+/* Main body front page, initial spacing from navbar */
+/* #mainBody {
+  margin-top: 42.5px;
+} */
+
+#rohanImg {
+  width: 100%;
+  border: thick double black;
+}
+
+/* Bootstrap elements changed here */
+/* Do in second version */
