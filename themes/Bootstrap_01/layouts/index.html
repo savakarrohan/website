@@ -1,5 +1,4 @@
 {{ define "main" }}
-{{ .Content }}
 <div id="mainBody">
     <div class="container mt-3">
         <div class="row g-0">
@@ -35,7 +34,7 @@
         <hr>
         <!-- Link content, to add about me section above this -->
         <div class="row g-5">
-            {{/* {% for post in site.posts %}
+            {{/* {% for post in site.posts %} To be fixed
             <div class="col-md-4 ">
                 <div class="card">
                     <img src="{{post.img01}}" class="card-img-top" alt="MENACE game">
@@ -45,8 +44,8 @@
                         <a href="{{ post.url | relative_url }}" class="btn btn-dark">{{ post.title }}</a>
                     </div>
                 </div>
-            </div> */}}
-            {% endfor %}
+            </div>
+            {% endfor %}*/}}
             <div class="col-md-4">
                 <div class="card" aria-hidden="true">
                     <img src="img/01_Menace/01_tic-tac-toe.png" class="card-img-top">
@@ -79,4 +78,6 @@
         <hr>
     </div>
 </div>
+{{/* Unsure if the content is needed. */}}
+{{ .Content }}
 {{ end }}
