@@ -15,22 +15,22 @@
     {
       "name": "Contact",
       "link": "/contact"
-    }
-    {
-        "name": "Mathematics",
-        "link": "/mathematics"
     },
     {
-        "name": "Optimization",
-        "link": "/optimization"
-      },
-      {
-        "name": "Engineering",
-        "link": "/engineering"
-      },
-      {
-        "name": "Art",
-        "link": "/art"
-      }
+      "name": "Mathematics",
+      "link": "/mathematics"
+    },
+    {
+      "name": "Optimization",
+      "link": "/optimization"
+    },
+    {
+      "name": "Engineering",
+      "link": "/engineering"
+    },
+    {
+      "name": "Art",
+      "link": "/art"
+    }
   ]
 }
