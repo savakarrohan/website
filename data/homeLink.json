@@ -2,7 +2,7 @@
   "homeNavigation": [
     {
       "name": "Home",
-      "link": "index.html"
+      "link": "/website"
     },
     {
       "name": "Sports",
