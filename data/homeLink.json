@@ -1,0 +1,36 @@
+{
+  "homeNavigation": [
+    {
+      "name": "Home",
+      "link": "/"
+    },
+    {
+      "name": "Sports",
+      "link": "/sports"
+    },
+    {
+      "name": "Academic",
+      "link": "/academic"
+    },
+    {
+      "name": "Contact",
+      "link": "/contact"
+    }
+    {
+        "name": "Mathematics",
+        "link": "/mathematics"
+    },
+    {
+        "name": "Optimization",
+        "link": "/optimization"
+      },
+      {
+        "name": "Engineering",
+        "link": "/engineering"
+      },
+      {
+        "name": "Art",
+        "link": "/art"
+      }
+  ]
+}
