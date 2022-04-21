@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html><head>
+    <meta name="viewport" content="width=device-width, initial scale=1.0" charset="utf-8">
+    <meta name="descripton" content=" A portfolio page of the mechanical engineer Rohan Savakar">
+    <meta http-equiv="pragma" content="no-cache" />
+    <title>Rohan Savakar's Blog and Portfolio</title>
+
+    
+    <link rel="stylesheet" href='/website/css/bootstrap.css'>
+    
+    <link rel="stylesheet" href='/website/css/style.css' type="text/css">
+    <link rel="stylesheet" href="Bootstrap/bootstrap-icons/font/bootstrap-icons.css">
+
+    
+    
+
+    
+    
+    <script type="text/javascript" src='/website/js/bootstrap.js'></script>
+</head><body>
+<div id="navigationBar">
+    <nav class="navbar navbar-dark navbar-expand-md bg-dark sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                Savakar Rohan</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Rohan Savakar</h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">
+                                Home
+                            </a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="sports">
+                                Sports
+                            </a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="academic">
+                                Academic
+                            </a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="contact">
+                                Contact
+                            </a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="mathematics">
+                                Mathematics
+                            </a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="optimization">
+                                Optimization
+                            </a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="engineering">
+                                Engineering
+                            </a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="art">
+                                Art
+                            </a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+</div><main>
+<div class="container blog-post">
+    <div class="p-4 p-md-5 mb-4 mt-4 text-white rounded bg-dark">
+        <div class="col-md-6 px-0">
+            <h1 class="display-1 fst-italic">MENACE #02</h1>
+            <p>Savakar Rohan</p>
+            <p class="lead my-3">A Mechanical computer to learn the game of tic-tac toe</p>
+            <p class="lead mb-0"><a href="#" class="text-white fw-bold">Continue reading...</a></p>
+        </div>
+    </div>
+
+    <div class="row g-5">
+        <div class="col-md-8">
+            <h4 class="pb-4 mb-4 fst-italic border-bottom">
+                Inspired by Matthew Scroggs Blog
+            </h4>
+            <h1 class="blog-post-title">MENACE #02</h1>
+            <p class="blog-post-meta fst-italic text-black-50">April 20, 2022 reading time :
+                2 minutes</p>
+
+            <article class="blog-post">
+                <p>Lets take a moment to revise everything so far;</p>
+<ul>
+<li>We learnt that we tend to <strong>reward</strong> good behaviour while <strong>reprimanding</strong> unfavourable ones.</li>
+<li>We learnt that states represent the factors which influence a person&rsquo;s decision.</li>
+<li>We learnt that the most recent state effects the players future decisions more than previous states</li>
+</ul>
+<h2 id="the-actual-computer">The actual computer</h2>
+<p>Now to the dirty business, how shall we make this computer?
+We saw that the states are independent of each other and primarily a decision is based purely out of the most recent state, so it makes sense to have <strong>containers</strong> of all the possible states. How will we make a decision for the next possible state? Let&rsquo;s imagine that each of these <strong>containers</strong> contained the probability of making a future decision. That is they contained information regarding which move to play next in the form of probability. Now how shall we represent this probability, the answer is quite simple, let&rsquo;s pick differently <strong>coloured balls</strong> from a closed bad.</p>
+<p>The computer is slowly taking shape, we now have to add the algorithm for rewarding and reprimanding.
+The game ends in three scenarios for any player { Win, Loss, Draw}. When we win let&rsquo;s reward the computer by increasing the probability that he wins again. How do we do that you may ask? Well we can do two things, either increase the number of the particular colour balls in the bag or decrease the other colour balls in the bag. Just because it&rsquo;s rewarding let&rsquo;s choose the first option of <strong>increase coloured ball count</strong>. Though I would be very happy to study what happens in the other scenario too. At the same time let&rsquo;s reprimand the computer by <strong>removing balls of the particular colour</strong> whenever it loses. Draw seem to be a slightly more positive reward than a negative one, so lets reward it by increasing the coloured ball count but not by as much if it had won.</p>
+<p>The architecture of the computer has been deveolped now what are the equivalent parts?</p>
+<ul>
+<li>The containers are matchboxes.</li>
+<li>The balls are different coloured beads representing each move possible.</li>
+<li>A reward is provided by increasing the number of coloured bead by 3.
+<ul>
+<li>For example: if in state:01 the red bead is picked and the game is terminated as a win by MENACE we add 3 additional red coloured beads in the respective state:01 box.</li>
+</ul>
+</li>
+<li>Similarly a reprimand is accomodated by decreasing the number of coloured bead by 1.
+<ul>
+<li>For example: if in state:01 a green bead is picked and the game terminates as a loss to MENACE we remove the picked green bead from the respective state:01 box.</li>
+</ul>
+</li>
+<li>A draw is considered by rewarding the coloured bead by 1.</li>
+</ul>
+
+            </article>
+        </div>
+
+        <div class="col-md-4">
+            <div class="position-sticky" style="top: 2rem;">
+                <div class="p-4 mb-3 bg-light rounded">
+                    <h4 class="fst-italic">Short description</h4>
+                    <p class="mb-0">
+                        Reward the computer by increasing balls count if favourable, while reprimand it by removing balls if the state is not good.
+                    </p>
+                </div>
+
+                <div class="p-4">
+                    <h4 class="fst-italic">Tags</h4>
+                    <ol class="list-unstyled mb-0">
+                        
+                        <a class="tag" href="/tags/mechanical">Mechanical</a>
+                        
+                        <a class="tag" href="/tags/computer">Computer</a>
+                        
+                        <a class="tag" href="/tags/learning">Learning</a>
+                        
+                        <a class="tag" href="/tags/tic-tac-toe">tic-tac-toe</a>
+                        
+                        <a class="tag" href="/tags/noughtscrosses">noughts&amp;crosses</a>
+                        
+                        <a class="tag" href="/tags/donald">Donald</a>
+                        
+                        <a class="tag" href="/tags/mitchie">Mitchie</a>
+                        
+                        <a class="tag" href="/tags/noughtscrosses">noughts&amp;crosses</a>
+                        
+                    </ol>
+                </div>
+
+                <div class="p-4">
+                    <h4 class="fst-italic">Further reading</h4>
+                    <ol class="list-group list-group-numbered text-break">
+                        
+                        <li class=" list-group-item">
+                            <a class="tag" href="/tags/https//www.mscroggs.co.uk/blog/">https://www.mscroggs.co.uk/blog/</a>
+                        </li>
+                        
+                        <li class=" list-group-item">
+                            <a class="tag" href="/tags/https//people.csail.mit.edu/brooks/idocs/matchbox.pdf">https://people.csail.mit.edu/brooks/idocs/matchbox.pdf</a>
+                        </li>
+                        
+                        <li class=" list-group-item">
+                            <a class="tag" href="/tags/http//cs.williams.edu/~freund/cs136-073/gardnerhexapawn.pdf">http://cs.williams.edu/~freund/cs136-073/GardnerHexapawn.pdf</a>
+                        </li>
+                        
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="row d-flex justify-content-between">
+            
+            
+            <div class="card mb-3 col-md-5">
+                <div class="row g-0">
+                    <div class="col-md-4 bg-black rounded-3">
+                        
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">MENACE #01</h5>
+                            <p class="card-text">A Mechanical computer to learn the game of tic-tac toe</p>
+                            <a href="https://savakarrohan.github.io/website/mathematics/menace/" class="btn btn-primary stretched-link">Go somewhere</a>
+                            <p class="card-text"><small class="text-muted">reading time :
+                                    7 minutes</small></p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <div class="card mb-3 col-md-5">
+                <div class="row g-0">
+                    <div class="col-md-4 bg-black rounded-3">
+                        
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Voila hey</h5>
+                            <p class="card-text"></p>
+                            <a href="https://savakarrohan.github.io/website/mathematics/voila/" class="btn btn-primary stretched-link">Go somewhere</a>
+                            <p class="card-text"><small class="text-muted">reading time :
+                                    1 minutes</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+        </main>
+<div class="container-fluid bg-dark text-white">
+    <footer class="py-4">
+        <div class="row justify-content-around">
+            <div class="col-6">
+                <h5>Section</h5>
+                <ul class="nav flex-column">
+                    
+                    <li class="nav-item mb-2">
+                        <a href="index.html" class="nav-link p-0 text-white">
+                            Home
+                        </a>
+                    </li>
+                    
+                    <li class="nav-item mb-2">
+                        <a href="sports" class="nav-link p-0 text-white">
+                            Sports
+                        </a>
+                    </li>
+                    
+                    <li class="nav-item mb-2">
+                        <a href="academic" class="nav-link p-0 text-white">
+                            Academic
+                        </a>
+                    </li>
+                    
+                    <li class="nav-item mb-2">
+                        <a href="contact" class="nav-link p-0 text-white">
+                            Contact
+                        </a>
+                    </li>
+                    
+                    <li class="nav-item mb-2">
+                        <a href="mathematics" class="nav-link p-0 text-white">
+                            Mathematics
+                        </a>
+                    </li>
+                    
+                    <li class="nav-item mb-2">
+                        <a href="optimization" class="nav-link p-0 text-white">
+                            Optimization
+                        </a>
+                    </li>
+                    
+                    <li class="nav-item mb-2">
+                        <a href="engineering" class="nav-link p-0 text-white">
+                            Engineering
+                        </a>
+                    </li>
+                    
+                    <li class="nav-item mb-2">
+                        <a href="art" class="nav-link p-0 text-white">
+                            Art
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+            <div class="col-3">
+                <form>
+                    <h5>Subscribe to my Posts</h5>
+                    <p>Monthly digest of whats new and exciting from me.</p>
+                    <div class="d-flex w-100 gap-2">
+                        <label for="newsletter1" class="visually-hidden">Email address</label>
+                        <input id="newsletter1" type="text" class="form-control w-50" placeholder="Email address">
+                        <button class="btn btn-primary btn-dark text-break" type="button">Subscribe</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="d-flex justify-content-around py-4 my-4 border-top">
+            <p>&copy; 2022 Rohan Savakar, All rights reserved. <br> All images designed by <a class="link-light"
+                    href='https://www.freepik.com'>freepik</a></p>
+            <ul class="list-unstyled d-flex">
+                <a class="text-white fs-3" href="https://twitter.com/RohanSavakar" target="_blank">
+                    <i class="bi-twitter"></i>
+                </a>
+                <li class="ms-3">
+                    <a class="text-white fs-3" href="https://github.com/savakarrohan">
+                        <i class="bi-github"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</div></body>
+
+</html>
