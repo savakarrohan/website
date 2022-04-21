@@ -21,7 +21,6 @@
             <article class="blog-post">
                 {{ .Content }}
             </article>
-
         </div>
 
         <div class="col-md-4">
@@ -55,6 +54,48 @@
             </div>
         </div>
     </div>
+    {{/* Container for bottom row cards */}}
+    <div class="container">
+        <div class="row d-flex justify-content-between">
+            {{/* with statement for the previous sectional post link */}}
+            {{ with .PrevInSection}}
+            <div class="card mb-3 col-md-5">
+                <div class="row g-0">
+                    <div class="col-md-4 bg-black rounded-3">
+                        {{/* <img src="..." class="img-fluid rounded-start" alt="..."> */}}
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">{{ .Title}}</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This content is a little bit longer.</p>
+                            <a href="{{ .Permalink}}" class="btn btn-primary stretched-link">Go somewhere</a>
+                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
 
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {{ end }}
+            {{ with .NextInSection}}
+            <div class="card mb-3 col-md-5">
+                <div class="row g-0">
+                    <div class="col-md-4 bg-black rounded-3">
+                        {{/* <img src="..." class="img-fluid rounded-start" alt="..."> */}}
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">{{.Title}} hey</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This content is a little bit longer.</p>
+                            <a href="{{ .Permalink}}" class="btn btn-primary stretched-link">Go somewhere</a>
+                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {{ end }}
+        </div>
+    </div>
 </div>
 {{ end }}
