@@ -4,7 +4,7 @@ title = "Savakar Rohan's site"
 theme = "Bootstrap_01"
 
 # Publishing directory to docs
-publishDir = "Docs"
+publishDir = "docs"
 
 
 
