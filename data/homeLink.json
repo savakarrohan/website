@@ -2,35 +2,35 @@
   "homeNavigation": [
     {
       "name": "Home",
-      "link": "/website"
+      "link": "/"
     },
     {
       "name": "Sports",
-      "link": "sports"
+      "link": "/sports"
     },
     {
       "name": "Academic",
-      "link": "academic"
+      "link": "/academic"
     },
     {
       "name": "Contact",
-      "link": "contact"
+      "link": "/contact"
     },
     {
       "name": "Mathematics",
-      "link": "mathematics"
+      "link": "/mathematics"
     },
     {
       "name": "Optimization",
-      "link": "optimization"
+      "link": "/optimization"
     },
     {
       "name": "Engineering",
-      "link": "engineering"
+      "link": "/engineering"
     },
     {
       "name": "Art",
-      "link": "art"
+      "link": "/art"
     }
   ]
 }
