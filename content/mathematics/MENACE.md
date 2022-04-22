@@ -20,9 +20,9 @@ _links:
   - https://www.mscroggs.co.uk/blog/
   - https://people.csail.mit.edu/brooks/idocs/matchbox.pdf
   - http://cs.williams.edu/~freund/cs136-073/GardnerHexapawn.pdf
-# img01: #all images so easier to write ; img/01_Menace/01_tic-tac-toe.png
-# img02:
-# img03:
+# img01: img/01_Menace/01_tic-tac-toe.png   #front home page card image
+# img02:                                    #main card on blog post image
+# img03:                                    #Additional just in case.
 ---
 
 The Matchbox Educable Noughts and Crosses Engine (**MENACE**)is a mechanical computer made from 304 matchboxes designed and built by Donald Mitchie in 1961.
