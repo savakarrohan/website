@@ -94,9 +94,9 @@
 <div class="container blog-post">
     <div class="p-4 p-md-5 mb-4 mt-4 text-white rounded bg-dark">
         <div class="col-md-6 px-0">
-            <h1 class="display-1 fst-italic">MENACE #02</h1>
+            <h1 class="display-1 fst-italic">Content</h1>
             <p>Savakar Rohan</p>
-            <p class="lead my-3">A Mechanical computer to learn the game of tic-tac toe</p>
+            <p class="lead my-3"></p>
             <p class="lead mb-0"><a href="#" class="text-white fw-bold">Continue reading...</a></p>
         </div>
     </div>
@@ -104,40 +104,16 @@
     <div class="row g-5">
         <div class="col-md-8">
             <h4 class="pb-4 mb-4 fst-italic border-bottom">
-                Inspired by Matthew Scroggs Blog
+                
             </h4>
-            <h1 class="blog-post-title">MENACE #02</h1>
-            <p class="blog-post-meta fst-italic text-black-50">April 20, 2022 reading time :
-                2 minutes</p>
+            <h1 class="blog-post-title">Content</h1>
+            <p class="blog-post-meta fst-italic text-black-50">April 23, 2022 reading time :
+                1 minutes</p>
 
             <article class="blog-post">
-                <p>Lets take a moment to revise everything so far;</p>
-<ul>
-<li>We learnt that we tend to <strong>reward</strong> good behaviour while <strong>reprimanding</strong> unfavourable ones.</li>
-<li>We learnt that states represent the factors which influence a person&rsquo;s decision.</li>
-<li>We learnt that the most recent state effects the players future decisions more than previous states</li>
-</ul>
-<h2 id="the-actual-computer">The actual computer</h2>
-<p>Now to the dirty business, how shall we make this computer?
-We saw that the states are independent of each other and primarily a decision is based purely out of the most recent state, so it makes sense to have <strong>containers</strong> of all the possible states. How will we make a decision for the next possible state? Let&rsquo;s imagine that each of these <strong>containers</strong> contained the probability of making a future decision. That is they contained information regarding which move to play next in the form of probability. Now how shall we represent this probability, the answer is quite simple, let&rsquo;s pick differently <strong>coloured balls</strong> from a closed bad.</p>
-<p>The computer is slowly taking shape, we now have to add the algorithm for rewarding and reprimanding.
-The game ends in three scenarios for any player { Win, Loss, Draw}. When we win let&rsquo;s reward the computer by increasing the probability that he wins again. How do we do that you may ask? Well we can do two things, either increase the number of the particular colour balls in the bag or decrease the other colour balls in the bag. Just because it&rsquo;s rewarding let&rsquo;s choose the first option of <strong>increase coloured ball count</strong>. Though I would be very happy to study what happens in the other scenario too. At the same time let&rsquo;s reprimand the computer by <strong>removing balls of the particular colour</strong> whenever it loses. Draw seem to be a slightly more positive reward than a negative one, so lets reward it by increasing the coloured ball count but not by as much if it had won.</p>
-<p>The architecture of the computer has been deveolped now what are the equivalent parts?</p>
-<ul>
-<li>The containers are matchboxes.</li>
-<li>The balls are different coloured beads representing each move possible.</li>
-<li>A reward is provided by increasing the number of coloured bead by 3.
-<ul>
-<li>For example: if in state:01 the red bead is picked and the game is terminated as a win by MENACE we add 3 additional red coloured beads in the respective state:01 box.</li>
-</ul>
-</li>
-<li>Similarly a reprimand is accomodated by decreasing the number of coloured bead by 1.
-<ul>
-<li>For example: if in state:01 a green bead is picked and the game terminates as a loss to MENACE we remove the picked green bead from the respective state:01 box.</li>
-</ul>
-</li>
-<li>A draw is considered by rewarding the coloured bead by 1.</li>
-</ul>
+                <p>Hey guys officia.</p>
+<p>Ea officia esse cupidatat labore esse incididunt ea minim culpa cupidatat commodo aute. Ut excepteur laborum magna fugiat irure consequat sunt cillum occaecat. Occaecat esse officia consequat adipisicing aliqua adipisicing reprehenderit duis cupidatat deserunt quis incididunt laboris. Duis est laboris voluptate laborum. Lorem adipisicing quis occaecat ut duis Lorem non reprehenderit nisi irure.</p>
+<p>Cupidatat eu irure adipisicing ad consequat mollit deserunt sunt occaecat. Aute excepteur et ex sit dolore enim nisi nulla reprehenderit quis amet fugiat. Exercitation sint officia reprehenderit adipisicing eiusmod nisi consequat labore aute tempor. Commodo laboris nulla Lorem enim id ipsum excepteur proident sit consectetur nulla ullamco. Voluptate cupidatat proident ut Lorem voluptate exercitation ea mollit ipsum tempor tempor eu elit Lorem. Tempor anim sunt reprehenderit et reprehenderit in in.</p>
 
             </article>
         </div>
@@ -147,7 +123,7 @@ The game ends in three scenarios for any player { Win, Loss, Draw}. When we win 
                 <div class="p-4 mb-3 bg-light rounded">
                     <h4 class="fst-italic">Short description</h4>
                     <p class="mb-0">
-                        Reward the computer by increasing balls count if favourable, while reprimand it by removing balls if the state is not good.
+                        
                     </p>
                 </div>
 
@@ -155,40 +131,12 @@ The game ends in three scenarios for any player { Win, Loss, Draw}. When we win 
                     <h4 class="fst-italic">Tags</h4>
                     <ol class="list-unstyled mb-0">
                         
-                        <a class="tag" href="/tags/mechanical">Mechanical</a>
-                        
-                        <a class="tag" href="/tags/computer">Computer</a>
-                        
-                        <a class="tag" href="/tags/learning">Learning</a>
-                        
-                        <a class="tag" href="/tags/tic-tac-toe">tic-tac-toe</a>
-                        
-                        <a class="tag" href="/tags/noughtscrosses">noughts&amp;crosses</a>
-                        
-                        <a class="tag" href="/tags/donald">Donald</a>
-                        
-                        <a class="tag" href="/tags/mitchie">Mitchie</a>
-                        
-                        <a class="tag" href="/tags/noughtscrosses">noughts&amp;crosses</a>
-                        
                     </ol>
                 </div>
 
                 <div class="p-4">
                     <h4 class="fst-italic">Further reading</h4>
                     <ol class="list-group list-group-numbered text-break">
-                        
-                        <li class=" list-group-item">
-                            <a class="tag" href="/tags/https//www.mscroggs.co.uk/blog/">https://www.mscroggs.co.uk/blog/</a>
-                        </li>
-                        
-                        <li class=" list-group-item">
-                            <a class="tag" href="/tags/https//people.csail.mit.edu/brooks/idocs/matchbox.pdf">https://people.csail.mit.edu/brooks/idocs/matchbox.pdf</a>
-                        </li>
-                        
-                        <li class=" list-group-item">
-                            <a class="tag" href="/tags/http//cs.williams.edu/~freund/cs136-073/gardnerhexapawn.pdf">http://cs.williams.edu/~freund/cs136-073/GardnerHexapawn.pdf</a>
-                        </li>
                         
                     </ol>
                 </div>
@@ -207,34 +155,17 @@ The game ends in three scenarios for any player { Win, Loss, Draw}. When we win 
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
-                            <h5 class="card-title">MENACE #01</h5>
-                            <p class="card-text">A Mechanical computer to learn the game of tic-tac toe</p>
-                            <a href="https://savakarrohan.github.io/website/mathematics/menace/" class="btn btn-primary stretched-link">Go somewhere</a>
+                            <h5 class="card-title">Voila</h5>
+                            <p class="card-text"></p>
+                            <a href="https://savakarrohan.github.io/website/mathematics/voila/" class="btn btn-primary stretched-link">Go somewhere</a>
                             <p class="card-text"><small class="text-muted">reading time :
-                                    7 minutes</small></p>
+                                    1 minutes</small></p>
 
                         </div>
                     </div>
                 </div>
             </div>
             
-            
-            <div class="card mb-3 col-md-5">
-                <div class="row g-0">
-                    <div class="col-md-4 bg-black rounded-3">
-                        
-                    </div>
-                    <div class="col-md-8">
-                        <div class="card-body">
-                            <h5 class="card-title">Voila hey</h5>
-                            <p class="card-text"></p>
-                            <a href="https://savakarrohan.github.io/website/mathematics/voila/" class="btn btn-primary stretched-link">Go somewhere</a>
-                            <p class="card-text"><small class="text-muted">reading time :
-                                    1 minutes</small></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
             
         </div>
     </div>
