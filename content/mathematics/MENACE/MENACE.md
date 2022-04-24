@@ -49,10 +49,16 @@ I find this topic a little more challenging to explain. Lets use the noughts and
 
 From the situation described above we define a state of the board as the state of the board just before a decision a player plays his move. The below picture describes one such game being played.
 
-<figure class = "figure">
+{{< img a="this is a">}}
+
+<!-- <figure class = "figure">
     <img src="{{'/img/01_Menace/02TicTacToeState.svg' | relative_url}}" width = "1000px" class = "figure-img img-fluid rounded"/>
     <figcaption class="figure-caption">Tic tac toe states</figcaption>
-</figure>
+</figure> -->
+
+<!-- {{<img src="/content/mathematics/MENACE/basic.png" title="Steve Francia" class="figure figure-img img-fluid rounded">}} -->
+
+<!-- {{< postimage "01_tic-tac-toe.png" "Tic tac toe" >}} -->
 
 In the diagram above player01 plays first always and player02 notices the state of the board without the green box, he/she eventually plays their move in response to state:-- at the green box.
 

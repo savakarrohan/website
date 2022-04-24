@@ -36,7 +36,7 @@
                     <h4 class="fst-italic">Tags</h4>
                     <ol class="list-unstyled mb-0">
                         {{ range .Params.tags }}
-                        <a class="tag" href="/tags/{{ . | urlize }}">{{ . }}</a>
+                        <a class="tag" href="/website/tags/{{ . | urlize }}">{{ . }}</a>
                         {{ end }}
                     </ol>
                 </div>
@@ -46,7 +46,7 @@
                     <ol class="list-group list-group-numbered text-break">
                         {{ range .Params._links }}
                         <li class=" list-group-item">
-                            <a class="tag" href="/tags/{{ . | urlize }}">{{ . }}</a>
+                            <a class="tag" href="{{ . }}">{{ . }}</a>
                         </li>
                         {{ end }}
                     </ol>
