@@ -20,7 +20,7 @@ _links:
   - https://www.mscroggs.co.uk/blog/
   - https://people.csail.mit.edu/brooks/idocs/matchbox.pdf
   - http://cs.williams.edu/~freund/cs136-073/GardnerHexapawn.pdf
-img01: /mathematics/menace02/card.jpg #all images so easier to write ; img/01_Menace/01_tic-tac-toe.png
+img01: card.jpg # the first image is for the card on the main page which is a vertical card.
 # img02:
 # img03:
 ---
