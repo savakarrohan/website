@@ -35,7 +35,15 @@ During world war II when computers were essentially mechanical devices and women
 
 Copying one of his paper's paragraph [2] :
 
-> A reason for being interested in games is that they provide a microcosm of intellectual activity in general. Those thought processes which we regard as being specifically human accomplishments—learning from experience, inductive reasoning, argument by analogy, the formation and testing of new hypotheses, and so on are brought into play even by simple games of mental skill. The problem of artificial intelligence consists in the reduction of these processes to the elementary operations of arithmetic and logic.
+{{< blockquote >}}
+"A reason for being interested in games is that they provide a microcosm of intellectual activity in general. Those thought processes which we regard as being specifically human accomplishments—learning from experience, inductive reasoning, argument by analogy, the formation and testing of new hypotheses, and so on are brought into play even by simple games of mental skill. The problem of artificial intelligence consists in the reduction of these processes to the elementary operations of arithmetic and logic."
+{{< /blockquote>}}
+
+<!-- <div class ="bg-light border-start border-3 border-dark ps-3">
+  <p>
+    A reason for being interested in games is that they provide a microcosm of intellectual activity in general. Those thought processes which we regard as being specifically human accomplishments—learning from experience, inductive reasoning, argument by analogy, the formation and testing of new hypotheses, and so on are brought into play even by simple games of mental skill. The problem of artificial intelligence consists in the reduction of these processes to the elementary operations of arithmetic and logic.
+  </p>
+</div> -->
 
 One can imagine the game as a "sequential decision" process, the sequence of choices made during the various "states" of the game result in an outcome. The outcome then being assigned a value, (much like John Nash's theory of utility) which determines how fruitful the previous desicions are. As the device learns _from past experiences_ it receives _reinforcements_ on what is good and bad.
 
