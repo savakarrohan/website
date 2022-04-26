@@ -37,11 +37,11 @@
             {{range $index := .Site.RegularPages }}
             <div class="col-md-4 ">
                 <div class="card">
-                    {{/* {{ $image := $index.GetMatch (.Params.img01)}} */}}
-                    {{/* {{ $smallImage := $image.Resize "2048x" }} */}}
-                    <img src="{{.Params.img01 | relURL}}" class="card-img-top" alt="">
+                    {{ $image := $index.Resources.GetMatch "card*"}}
+                    {{ $smallImage := $image.Fill "400x400" }}
+                    <img src="{{$smallImage.RelPermalink}}" class="card-img-top" alt="">
                     <div class="card-body">
-                        <h5 class="card-title">{{ .Title }}{{ $index.Title}}</h5>
+                        <h5 class="card-title">{{ .Title }}</h5>
                         <p class="card-text">{{ .Params.attention }}</p>
                         <a href="{{ .RelPermalink }}" class="btn btn-dark">{{ .Title}}</a>
                     </div>
