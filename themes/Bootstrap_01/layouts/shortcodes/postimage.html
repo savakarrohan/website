@@ -1,21 +1,10 @@
-{{/* Link variable */}}
-{{/* {{ $Linking := .Get 0}} */}}
-{{/* Image variable created from first argument matching as close as possible can use the * symbol. */}}
-{{/* {{ $image := $.Resourse.GetMatch (.Get 0)}}
-{{ $smallImage := $image.Resize "1024x" }} */}}
-{{/* Figure type from the Bootstrap css */}}
-{{/* <figure class="figure">
+{{ $image := $.Page.Resources.GetMatch (.Get 0)}}
+{{ $smallImage := $image.Resize "2048x" }}
+<figure class=" figure ">
     <a href="{{ $image.RelPermalink }}">
         {{ with $smallImage }}
-        <img src="{{ .RelPermalink }}" class="figure-img img-fluid rounded" alt=" {{ $.Get 1}}" />
-        <figcaption class="figure-caption">{{.Get 1}}</figcaption>
+        <img class=" figure-img img-fluid rounded" src="{{ .RelPermalink }}" alt="{{ $.Get 1 }}" />
         {{ end }}
     </a>
-</figure> */}}
-
-{{/* {{$first := $.Get 0}}
-{{$second := $.Get 1}}
-
-<p>
-    Hey world here is {{$first}} and {{$second}}
-</p> */}}
+    <figcaption class="figure-caption">{{ .Get 1 }}</figcaption>
+</figure>
