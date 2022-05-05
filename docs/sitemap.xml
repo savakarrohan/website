@@ -1,70 +1,44 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
     <loc>https://savakarrohan.github.io/website/</loc>
     <lastmod>2022-04-20T17:42:09+05:30</lastmod>
     <priority>0</priority>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://savakarrohan.github.io/website/tags/computer/</loc>
     <lastmod>2022-04-20T17:42:09+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://savakarrohan.github.io/website/tags/donald/</loc>
     <lastmod>2022-04-20T17:42:09+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://savakarrohan.github.io/website/tags/learning/</loc>
     <lastmod>2022-04-20T17:42:09+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://savakarrohan.github.io/website/mathematics/</loc>
     <lastmod>2022-04-20T17:42:09+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://savakarrohan.github.io/website/tags/mechanical/</loc>
     <lastmod>2022-04-20T17:42:09+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://savakarrohan.github.io/website/mathematics/menace02/</loc>
     <lastmod>2022-04-20T17:42:09+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://savakarrohan.github.io/website/tags/mitchie/</loc>
     <lastmod>2022-04-20T17:42:09+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://savakarrohan.github.io/website/tags/noughtscrosses/</loc>
     <lastmod>2022-04-20T17:42:09+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://savakarrohan.github.io/website/tags/</loc>
     <lastmod>2022-04-20T17:42:09+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://savakarrohan.github.io/website/tags/tic-tac-toe/</loc>
     <lastmod>2022-04-20T17:42:09+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://savakarrohan.github.io/website/mathematics/menace/</loc>
     <lastmod>2022-04-16T17:42:09+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://savakarrohan.github.io/website/categories/</loc>
   </url>
-  
 </urlset>

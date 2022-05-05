@@ -1,2 +1,5 @@
 #ignore created site
 public/
+
+#ignore the build.lock file of hugo
+*.lock
