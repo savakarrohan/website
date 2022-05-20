@@ -18,6 +18,7 @@ tags:
 _links:
   - https://en.wikipedia.org/wiki/Lissajous_curve
   - https://codepen.io/kotwgarnku/full/dMqKZG
+  - http://jsxgraph.uni-bayreuth.de/wiki/index.php/Lissajous_curves
 img01:
 img02:
 img03:
