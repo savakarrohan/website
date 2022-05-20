@@ -4,7 +4,7 @@ Date: 2022-05-19T18:21:51+05:30
 Draft: false
 layout: #select between art, contact, engineering, mathematics, optimization, sports
 attention: #A short sentence quirky about it.
-inspiration: #Inspiration
+inspiration: Cisco Facebook
 author: Savakar Rohan #if any collaboration
 shortDescription: # Description
 tags: # Add as many tags as possible; Mechanical Computer Learning tic-tac-toe noughts&crosses Donald Mitchie noughts&crosses
