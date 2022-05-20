@@ -12,6 +12,7 @@ _links: #related links for the same; https://www.mscroggs.co.uk/blog/ https://pe
 # img01: img/01_Menace/01_tic-tac-toe.png   #front home page card image
 # img02:                                    #main card on blog post image
 # img03:                                    #Additional just in case.
+math: False
 ---
 
 Minim nulla ea ut id id enim dolore quis nulla. Est Lorem tempor ullamco veniam mollit. Proident cupidatat exercitation amet tempor aliquip adipisicing Lorem exercitation laborum eiusmod deserunt irure ullamco. Ullamco do magna Lorem anim minim ea excepteur. Lorem cupidatat amet velit do cupidatat fugiat pariatur et ex duis laborum ex sunt est. Lorem sint consequat velit ut officia.
