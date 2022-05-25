@@ -44,5 +44,9 @@ body::-webkit-scrollbar {
   background-color: white;
 }
 
+/* grid element on main page */
+.grid {
+  display: grid;
+}
 /* Bootstrap elements changed here */
 /* Do in second version */

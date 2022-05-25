@@ -36,7 +36,7 @@
         <div class="row g-5">
             {{range $index := .Site.RegularPages }}
             <div class=" grid col-md-4 ">
-                <div class="card">
+                <div class="grid-item card">
                     {{ $image := $index.Resources.GetMatch "card*"}}
                     {{ $smallImage := $image.Fit "400x400" }}
                     <img src="{{$smallImage.RelPermalink}}" class="card-img-top" alt="">
