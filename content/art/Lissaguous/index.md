@@ -20,7 +20,6 @@ _links:
   - https://codepen.io/kotwgarnku/full/dMqKZG
   - http://jsxgraph.uni-bayreuth.de/wiki/index.php/Lissajous_curves
   - https://mathcurve.com/courbes2d.gb/lissajous/lissajous.shtml
-  -
 img01:
 img02:
 img03:
@@ -37,8 +36,8 @@ A lissaguous curve can be constructed with a parametric curve $(t)$ and 4 variab
 
 $$
 	\begin{array}{ccc|}
-		x &= &A sin(at + \delta) \\\
-		y &= &B sin(bt)
+		  x &= &A sin(at + \delta) \\\
+		  y &= &B sin(bt)
 	\end{array}
 	\quad 0 \leq\delta \leq \frac{\pi}{2}
 $$
