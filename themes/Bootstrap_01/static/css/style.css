@@ -47,6 +47,7 @@ body::-webkit-scrollbar {
 /* grid element on main page */
 .grid {
   display: grid;
+  grid-template-rows: masonry;
 }
 /* Bootstrap elements changed here */
 /* Do in second version */

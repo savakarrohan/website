@@ -35,8 +35,8 @@
         <!-- Link content, to add about me section above this -->
         <div class="row g-5">
             {{range $index := .Site.RegularPages }}
-            <div class=" grid col-md-4 ">
-                <div class="grid-item card">
+            <div class="col-md-4 ">
+                <div class="card">
                     {{ $image := $index.Resources.GetMatch "card*"}}
                     {{ $smallImage := $image.Fit "400x400" }}
                     <img src="{{$smallImage.RelPermalink}}" class="card-img-top" alt="">
