@@ -52,3 +52,7 @@ Let's have a look at what each of the variables would mean.
 - $\delta$ : Phase difference.
   - This explains the different starting locations of the respective starting locations of the x, y points.
   - This would mean that we could move the curve around by varying the $\delta$ variable.
+
+## Visualisation
+
+Now what are the best ways to visualise these equations. As you can see the equations are in the x, y axes,
