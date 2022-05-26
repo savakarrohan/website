@@ -62,3 +62,5 @@ Lets plot for some of the variables mentioned above.
 ## Visualisation
 
 Now what are the best ways to visualise these equations. As you can see the equations are in the x, y axes its as simple as plotting them. But let us dwelve slightly more in to a different method.
+
+Let us look at the
