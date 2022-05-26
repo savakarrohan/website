@@ -53,6 +53,12 @@ Let's have a look at what each of the variables would mean.
   - This explains the different starting locations of the respective starting locations of the x, y points.
   - This would mean that we could move the curve around by varying the $\delta$ variable.
 
+Lets plot for some of the variables mentioned above.
+
+{{< postimage "figure_01.jpg" "FIg 01: plots of how the frequency changes plots">}}
+
+{{< video src="Video01.mp4" type="video/mp4" preload="auto" caption="Vid 01: Video of varying delta so that the curve moves.">}}
+
 ## Visualisation
 
-Now what are the best ways to visualise these equations. As you can see the equations are in the x, y axes,
+Now what are the best ways to visualise these equations. As you can see the equations are in the x, y axes its as simple as plotting them. But let us dwelve slightly more in to a different method.
