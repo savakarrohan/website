@@ -63,4 +63,25 @@ Lets plot for some of the variables mentioned above.
 
 Now what are the best ways to visualise these equations. As you can see the equations are in the x, y axes its as simple as plotting them. But let us dwelve slightly more in to a different method.
 
-Let us look at the
+Let us look at the video above, it appears that the curve is rotating anticlockwise. It seems clear that there is a repeatitive circular motion. At the same time from the figure above when both the frequencies $a,b$ are the same we notice a circle being formed. This circular repetetive motion of the curve against the screen then gives one of the plots & much like either a cylindrical co-ordinate system.
+
+Let us make some modifications for the above equations to plot the system in 3 axes.
+
+$$
+\begin{array}{ccc}
+  x &= &A sin(at ) \\\
+  y &= &A sin(at + \frac{\pi}{2}) \\\
+  z &= &B sin(bt + \delta)
+\end{array}
+$$
+
+Now from the above parametric system of equations it is seen that x and y make a circle in the X/Y plane while the Z direction gives the magnitude in the z axis, thus forming a revolving and continuous curve along the circle. Plotting this diagram gives an appearance as below.
+
+{{< postimage "figure_02.png" "Fig 02: 3d Curve representation">}}
+
+Now this has an eerily similarity to those of conic shapes such as parabola, hyperbolas, ellipses and circles. Much like the same one can construct lissaguous curves from such sections. Another interesting point to notice now is, such a plot has given rise to a continuous curve which repeats itself is it possible for the curve to never repeat?
+What would happen if we were to take slices of the above 3d cylinder at angles?
+
+## Interesting takes
+
+Now that we can visualise the curves, let's look at how they might vary with different values. Take a look at the variety of equations and understanding that the frequency is related to the variables $(a,b)$. At the same time the plot using the cylinder gives us the idea that the curve repeats itself, thus if there are irrational numbers for the values $(a,b)$, then the curve will never repeat.
