@@ -1,6 +1,10 @@
-<video class="video-shortcode" preload='{{ .Get " preload" }}' controls>
-    <source src='{{ .Get "src" }}' type='{{ .Get " type" }}'>
-    There should have been a video here but your browser does not seem
-    to support it.
-</video>
-<figcaption class="figure-caption">{{ .Get "caption" }}</figcaption>
+<div class="row justify-content-center">
+    <div class="col-10">
+        <video class="video-shortcode justify-content-center" preload='{{ .Get " preload" }}' controls>
+            <source src='{{ .Get "src" }}' type='{{ .Get " type" }}'>
+            There should have been a video here but your browser does not seem
+            to support it.
+        </video>
+        <figcaption class="figure-caption text-center">{{ .Get "caption" }}</figcaption>
+    </div>
+</div>
