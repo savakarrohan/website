@@ -33,12 +33,13 @@
 
         <hr>
         <!-- Link content, to add about me section above this -->
-        <div class="row g-5">
+        <div class="row g-5" data-masonry='{"percentPosition": true }'>
             {{range $index := .Site.RegularPages }}
             <div class="col-md-4 ">
                 <div class="card">
                     {{ $image := $index.Resources.GetMatch "card*"}}
-                    {{ $smallImage := $image.Fill "400x400" }}
+                    {{ $smallImage := $image.Fit "400x400" }}
+                    {{/* {{ $smallImage := $smallImage.Fit "400x400"}} */}}
                     <img src="{{$smallImage.RelPermalink}}" class="card-img-top" alt="">
                     <div class="card-body">
                         <h5 class="card-title">{{ .Title }}</h5>

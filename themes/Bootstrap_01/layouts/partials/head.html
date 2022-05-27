@@ -8,8 +8,8 @@
     <link rel="stylesheet" href='{{ "css/bootstrap.css" | relURL }}'>
     {{/*
     <link rel="stylesheet" href='{{ "css/bootstrap.rtl.css" | relURL }}'> */}}
-    <link rel="stylesheet" href='{{ "css/style.css" | relURL }}' type="text/css">
     <link rel="stylesheet" href="Bootstrap/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href='{{ "css/style.css" | relURL }}' type="text/css">
 
     <!-- Font family of all Google fonts
     List of fonts:
@@ -33,6 +33,18 @@
         src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML">
         </script> */}}
     <script type="text/javascript" src='{{ "js/bootstrap.js" | relURL}}'></script>
+
+    {{/* Masonry script for responsive grid */}}
+    {{/*
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script> */}}
+    {{/*
+    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
+        integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous"
+        async></script> */}}
+
+
+    {{/* app.js file written by me. */}}
+    <script src='{{"js/app.js" | relURL}}'></script>
 
     {{/* section to add math */}}
     {{ if .Params.math }}{{ partial "katex.html" . }}{{ end }}
