@@ -85,3 +85,7 @@ What would happen if we were to take slices of the above 3d cylinder at angles?
 ## Interesting takes
 
 Now that we can visualise the curves, let's look at how they might vary with different values. Take a look at the variety of equations and understanding that the frequency is related to the variables $(a,b)$. At the same time the plot using the cylinder gives us the idea that the curve repeats itself, thus if there are irrational numbers for the values $(a,b)$, then the curve will never repeat.
+
+{{< postimage "figure_03.png" "Fig03: Irrational frequency" >}}
+
+As the terms $(a,b)$ represent the frequency at which the curve moves in the $(X-Y)$ plane and the sin curve on the $z$ axis. The ratio between the two terms are more important than the individual values respectively, this is represented clearly in Fig01.
