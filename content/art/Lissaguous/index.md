@@ -28,6 +28,86 @@ math: True
 
 The recent naming ceremony of Facebook caught my eye, I noticed the symbolic play going on about the company but I seemed to be more intrigued by the new symbol of META. It looked different, peacefull, everending and capable of much much more. This reminded me of the paintings being made by the garage artists, hanging a paint bucket and pushing it on to a blank canvas. I was perplexed when I finally found an article for parametric curves and dwelled in to the beatifull mathematics behind art.
 
+## Art logos
+
+<div class = "row justify-content-center">
+<div class = "col-6">
+  <figure class=" figure ">
+      <a href="MetaLogo.png">
+          <img class=" figure-img img-fluid rounded" src="MetaLogo.png" alt="" />
+      </a>
+      <figcaption class="figure-caption text-center">META, Facebook's parent company</figcaption>
+  </figure>
+  </div>
+</div>
+
+### Australian Broadcasting company
+
+<div class = "row justify-content-center">
+<div class = "col-6">
+  <figure class=" figure ">
+      <a href="Australian_Broadcasting_Corporation_logo.png">
+          <img class=" figure-img img-fluid rounded" src="Australian_Broadcasting_Corporation_logo.png" alt="" />
+      </a>
+      <figcaption class="figure-caption text-center">ABC logo</figcaption>
+  </figure>
+  </div>
+</div>
+
+$$ A = 3, a = 1, B = 1, b = 3$$
+
+### Cisco Webex
+
+<div class = "row justify-content-center">
+<div class = "col-6">
+  <figure class=" figure ">
+      <a href="CiscoWebex.png">
+          <img class=" figure-img img-fluid rounded" src="CiscoWebex.png" alt="" />
+      </a>
+      <figcaption class="figure-caption text-center">Cisco Webex logo</figcaption>
+  </figure>
+  </div>
+</div>
+
+### MIT lincoln laboratory
+
+<div class = "row justify-content-center">
+<div class = "col-6">
+  <figure class=" figure ">
+      <a href="MIT.png">
+          <img class=" figure-img img-fluid rounded" src="MIT.png" alt="" />
+      </a>
+      <figcaption class="figure-caption text-center">MIT lincoln laboratory</figcaption>
+  </figure>
+  </div>
+</div>
+
+### Movies Anywhere
+
+<div class = "row justify-content-center">
+<div class = "col-6">
+  <figure class=" figure ">
+      <a href="MoviesAnywhereLogo.png">
+          <img class=" figure-img img-fluid rounded" src="MoviesAnywhereLogo.png" alt="" />
+      </a>
+      <figcaption class="figure-caption text-center">Movies Anywhere, a service by Disney+</figcaption>
+  </figure>
+  </div>
+</div>
+
+### The university of Electro-Communications, Japan
+
+<div class = "row justify-content-center">
+<div class = "col-6">
+  <figure class=" figure ">
+      <a href="Uec-logo.png">
+          <img class=" figure-img img-fluid rounded" src="Uec-logo.png" alt="" />
+      </a>
+      <figcaption class="figure-caption text-center">MIT lincoln laboratory</figcaption>
+  </figure>
+  </div>
+</div>
+
 ## Introduction
 
 Curves are seen in a lot of applications from art, to engineering, to science. These curves also appear to be solutions to many solutions in the engineering field. It is well known that an arch which is a parabola which is a member of the family of conic sections. There are various ways to draw curves, we could draw using a parametric equation, a function could be written. At the same time we could use define the curve under different coordinate systems. It might be easier to draw a different curve on different systems.
@@ -85,3 +165,7 @@ What would happen if we were to take slices of the above 3d cylinder at angles?
 ## Interesting takes
 
 Now that we can visualise the curves, let's look at how they might vary with different values. Take a look at the variety of equations and understanding that the frequency is related to the variables $(a,b)$. At the same time the plot using the cylinder gives us the idea that the curve repeats itself, thus if there are irrational numbers for the values $(a,b)$, then the curve will never repeat.
+
+{{< postimage "figure_03.png" "Fig03: Irrational frequency" >}}
+
+As the terms $(a,b)$ represent the frequency at which the curve moves in the $(X-Y)$ plane and the sin curve on the $z$ axis. The ratio between the two terms are more important than the individual values respectively, this is represented clearly in Fig01.

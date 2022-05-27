@@ -3,3 +3,6 @@ public/
 
 #ignore the build.lock file of hugo
 *.lock
+
+#ignore the resources folder
+resources/
