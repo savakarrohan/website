@@ -8,8 +8,8 @@
     
     <link rel="stylesheet" href='/website/css/bootstrap.css'>
     
-    <link rel="stylesheet" href='/website/css/style.css' type="text/css">
     <link rel="stylesheet" href="Bootstrap/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href='/website/css/style.css' type="text/css">
 
     
     
@@ -17,6 +17,14 @@
     
     
     <script type="text/javascript" src='/website/js/bootstrap.js'></script>
+
+    
+    
+    
+
+
+    
+    <script src='/website/js/app.js'></script>
 
     
     
@@ -137,7 +145,7 @@
             </h4>
             <h1 class="blog-post-title">Lissaguous curves</h1>
             <p class="blog-post-meta fst-italic text-black-50">May 19, 2022 reading time :
-                2 minutes</p>
+                4 minutes</p>
 
             <article class="blog-post">
                 <p>The recent naming ceremony of Facebook caught my eye, I noticed the symbolic play going on about the company but I seemed to be more intrigued by the new symbol of META. It looked different, peacefull, everending and capable of much much more. This reminded me of the paintings being made by the garage artists, hanging a paint bucket and pushing it on to a blank canvas. I was perplexed when I finally found an article for parametric curves and dwelled in to the beatifull mathematics behind art.</p>
@@ -171,6 +179,49 @@ $$</p>
 </ul>
 </li>
 </ul>
+<p>Lets plot for some of the variables mentioned above.</p>
+
+
+<figure class=" figure ">
+    <a href="/website/art/lissaguous/figure_01.jpg">
+        
+        <img class=" figure-img img-fluid rounded" src="/website/art/lissaguous/figure_01_hu0b887168ad39823a04c0d7de7dead9cf_660531_2048x0_resize_q75_box.jpg" alt="FIg 01: plots of how the frequency changes plots" />
+        
+    </a>
+    <figcaption class="figure-caption">FIg 01: plots of how the frequency changes plots</figcaption>
+</figure>
+<video class="video-shortcode" preload='' controls>
+    <source src='Video01.mp4' type=''>
+    There should have been a video here but your browser does not seem
+    to support it.
+</video>
+<figcaption class="figure-caption">Vid 01: Video of varying delta so that the curve moves.</figcaption>
+<h2 id="visualisation">Visualisation</h2>
+<p>Now what are the best ways to visualise these equations. As you can see the equations are in the x, y axes its as simple as plotting them. But let us dwelve slightly more in to a different method.</p>
+<p>Let us look at the video above, it appears that the curve is rotating anticlockwise. It seems clear that there is a repeatitive circular motion. At the same time from the figure above when both the frequencies $a,b$ are the same we notice a circle being formed. This circular repetetive motion of the curve against the screen then gives one of the plots &amp; much like either a cylindrical co-ordinate system.</p>
+<p>Let us make some modifications for the above equations to plot the system in 3 axes.</p>
+<p>$$
+\begin{array}{ccc}
+x &amp;= &amp;A sin(at ) \\
+y &amp;= &amp;A sin(at + \frac{\pi}{2}) \\
+z &amp;= &amp;B sin(bt + \delta)
+\end{array}
+$$</p>
+<p>Now from the above parametric system of equations it is seen that x and y make a circle in the X/Y plane while the Z direction gives the magnitude in the z axis, thus forming a revolving and continuous curve along the circle. Plotting this diagram gives an appearance as below.</p>
+
+
+<figure class=" figure ">
+    <a href="/website/art/lissaguous/figure_02.png">
+        
+        <img class=" figure-img img-fluid rounded" src="/website/art/lissaguous/figure_02_hud874f31ae6f89259e3b9cdabbe09742d_75429_2048x0_resize_box_3.png" alt="Fig 02: 3d Curve representation" />
+        
+    </a>
+    <figcaption class="figure-caption">Fig 02: 3d Curve representation</figcaption>
+</figure>
+<p>Now this has an eerily similarity to those of conic shapes such as parabola, hyperbolas, ellipses and circles. Much like the same one can construct lissaguous curves from such sections. Another interesting point to notice now is, such a plot has given rise to a continuous curve which repeats itself is it possible for the curve to never repeat?
+What would happen if we were to take slices of the above 3d cylinder at angles?</p>
+<h2 id="interesting-takes">Interesting takes</h2>
+<p>Now that we can visualise the curves, let&rsquo;s look at how they might vary with different values. Take a look at the variety of equations and understanding that the frequency is related to the variables $(a,b)$. At the same time the plot using the cylinder gives us the idea that the curve repeats itself, thus if there are irrational numbers for the values $(a,b)$, then the curve will never repeat.</p>
 
             </article>
         </div>
@@ -223,10 +274,6 @@ $$</p>
                         
                         <li class=" list-group-item">
                             <a class="tag" href="https://mathcurve.com/courbes2d.gb/lissajous/lissajous.shtml">https://mathcurve.com/courbes2d.gb/lissajous/lissajous.shtml</a>
-                        </li>
-                        
-                        <li class=" list-group-item">
-                            <a class="tag" href=""></a>
                         </li>
                         
                     </ol>
