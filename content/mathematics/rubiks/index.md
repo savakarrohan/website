@@ -19,6 +19,8 @@ _links:
   - https://www.jaapsch.net/puzzles/patents/gb1344259.pdf
   - https://en.wikipedia.org/wiki/Rubik%27s_Cube
   - https://cjme.springeropen.com/articles/10.1186/s10033-018-0269-7
+  - https://web.mit.edu/sp.268/www/rubik.pdf
+  - https://ocw.mit.edu/courses/es-268-the-mathematics-in-toys-and-games-spring-2010/
 # img01: img/01_Menace/01_tic-tac-toe.png   #front home page card image
 # img02:                                    #main card on blog post image
 # img03:                                    #Additional just in case.
@@ -60,6 +62,35 @@ The edge peice consists of 2 faces each with different colours. These pieces can
 _Note: Each of the events mentioned above are separate independent events. That is edge position and edge color are independent of each other. This might not be the case in other games/puzzles_
 
 \begin{align}
-P\_{position} \cdot P\_{color} = P\_{Edge}
-P\_{Edge} = 12! \times 2^{11}
+P\_{position} \cdot P\_{color} &= P\_{Edge} \\\
+P\_{Edge} &= 12! \times 2^{11}
 \end{align}
+
+### Corner pieces
+
+The corner peices consist of 3 faces each with different colours. These pieces can be located 8 different locations on the cube. Four each on the Down and Up layers of the cube. Moving forward similarly as the above explanation, we have $8!$ arrangments with the corner pieces and a total of $3^7$ possible orientations for the faces of the cube.
+
+\begin{align}
+P\_{position} \cdot P\_{color} &= P\_{Corner} \\\
+P\_{Corner} &= 8! \times 3^{7}
+\end{align}
+
+### Factor
+
+The mechanism of the cube restricts the only two edges or two corners only swapping. This thus brings out that only even permutations of the groups are allowed thus the factor to be included here is $\frac{1}{2}$.
+
+\begin{align}
+P\_{Factor} &= \frac{1}{2}
+\end{align}
+
+_Note: At this point I would like to point that a direct swapping between 2 edges or only 2 corners only is not feasible but a swap with an edge and a corner group is feasible._
+
+### The number
+
+Bringing all the numbers together we get:
+\begin{align}
+P\_{Center} \cdot P\_{Corner}\cdot P\_{Edge}\cdot P\_{Factor} &= \text{Total Permutation of Cube} \\\
+1 \times 8! \times 3^{7} \times 12! \times 2^{11} \times \frac{1}{2} &= 43,252,003,274,489,856,000
+\end{align}
+
+These are the number of ways that a legal rubiks cube can be present in.
