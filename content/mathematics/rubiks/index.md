@@ -18,7 +18,7 @@ tags:
 _links:
   - https://www.jaapsch.net/puzzles/patents/gb1344259.pdf
   - https://en.wikipedia.org/wiki/Rubik%27s_Cube
-  -
+  - https://cjme.springeropen.com/articles/10.1186/s10033-018-0269-7
 # img01: img/01_Menace/01_tic-tac-toe.png   #front home page card image
 # img02:                                    #main card on blog post image
 # img03:                                    #Additional just in case.
@@ -43,4 +43,23 @@ P\_{Center} \cdot P\_{Corner} \cdot P\_{Edge} \cdot P\_{Factor} = \text{Total Pe
 
 ### Center pieces
 
-A simple dismantling of the classic rubiks cube shows us that the center pieces are rigidly connected to each other, though each of the faces of these pieces are permitted to rotate about their connections. Thus there is only a single way in which the
+A simple dismantling of the classic rubiks cube shows us that the center pieces are rigidly connected to each other, though each of the faces of these pieces are permitted to rotate about their connections. Thus there is only a single way in which the centre pieces can be permuted.
+
+{{< postimage "Dismantled.png" "Fig 01:  The centre piece has a fixed relationship with the other pieces." >}}
+
+Although the face of these pieces are permitted to be rotated, these pieces do not move/ change position relative to one another.
+
+\begin{align}
+P\_{Center} = 1
+\end{align}
+
+### Edge pieces
+
+The edge peice consists of 2 faces each with different colours. These pieces can be located at 12 different locations on the cube. Four locations on each layer of the cube. With 12 locations and 12 pieces the number of ways these pieces may be arranged legally is $12!$. Each piece having two faces can then be placed in 2 ways but because a t least one of the pieces has to be in a fixed orientation we will have $2^{11}$ such arrangements.
+
+_Note: Each of the events mentioned above are separate independent events. That is edge position and edge color are independent of each other. This might not be the case in other games/puzzles_
+
+\begin{align}
+P\_{position} \cdot P\_{color} = P\_{Edge}
+P\_{Edge} = 12! \times 2^{11}
+\end{align}
