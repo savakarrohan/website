@@ -4,11 +4,11 @@ Date: 2022-06-07T22:48:18+05:30
 Draft: false
 layout: #select between art, contact, engineering, mathematics, optimization, sports
 attention: This toy which eats countless brains is a marvel of mathematics, engineering and design. A small introduction in to the algorithms required to solve this fantabulous device.
-inspiration: Inspired when I realised that a 5x5x5 cube could be broken down to a 3x3x3 cube.
+inspiration: Inspired when I realised that a 5x5x5 cube could be broken down to a 3x3x3 cube as a (1+3+1)x(1+3+1)x(1+3+1) cube.
 author: Savakar Rohan #if any collaboration
 shortDescription: # Description
 tags:
-  - Erno Rubik
+  - Ernő Rubik
   - Rubiks Cube
   - Mathematics
   - Group Theory
@@ -22,11 +22,25 @@ _links:
 # img01: img/01_Menace/01_tic-tac-toe.png   #front home page card image
 # img02:                                    #main card on blog post image
 # img03:                                    #Additional just in case.
-math: False
+math: True
 ---
 
-Minim nulla ea ut id id enim dolore quis nulla. Est Lorem tempor ullamco veniam mollit. Proident cupidatat exercitation amet tempor aliquip adipisicing Lorem exercitation laborum eiusmod deserunt irure ullamco. Ullamco do magna Lorem anim minim ea excepteur. Lorem cupidatat amet velit do cupidatat fugiat pariatur et ex duis laborum ex sunt est. Lorem sint consequat velit ut officia.
+## Introduction
 
-Ea officia esse cupidatat labore esse incididunt ea minim culpa cupidatat commodo aute. Ut excepteur laborum magna fugiat irure consequat sunt cillum occaecat. Occaecat esse officia consequat adipisicing aliqua adipisicing reprehenderit duis cupidatat deserunt quis incididunt laboris. Duis est laboris voluptate laborum. Lorem adipisicing quis occaecat ut duis Lorem non reprehenderit nisi irure.
+The Rubik's cube is a 3D - combination puzzle invented in 1974 by a Hungarian sculptor and professor of architecture Ernő Rubik. It was initially called the magic cube but as the toy slowly became an international sensation the business men marketed it as the Rubik's cube, a much more catchy name. The cube comprises of 6 faces of different color where a solved state of the cube occurs when all the faces of the cube has a single color.
 
-Cupidatat eu irure adipisicing ad consequat mollit deserunt sunt occaecat. Aute excepteur et ex sit dolore enim nisi nulla reprehenderit quis amet fugiat. Exercitation sint officia reprehenderit adipisicing eiusmod nisi consequat labore aute tempor. Commodo laboris nulla Lorem enim id ipsum excepteur proident sit consectetur nulla ullamco. Voluptate cupidatat proident ut Lorem voluptate exercitation ea mollit ipsum tempor tempor eu elit Lorem. Tempor anim sunt reprehenderit et reprehenderit in in.
+## Construction and counting the "Permutations" on a cube
+
+The cube is constructed with 3 different set of pieces. The first piece has a single face and thus a single color on it, called the center piece. The second set of pieces have two faces and thus two colors, called the edge piece. The third set of pieces are made from the corner pieces, which are called the corner pieces. A trivial notice of the rubiks cube or dismantling the cube shows us that the center piece is a never moving piece. That is all the center pieces are in a fixed and solved state, this brings a lot of interesting takes on the solving of the cube as this piece of information could be used as a reference. I would like to point out at this point of time that the centre piece is only present in the odd numbered cubes.
+
+Having learnt that there are three different sets/ groups of pieces which have to be moved, it makes sense to consider that these groups move individually. Though this should be the case (because each group has a different number of colors on it) the mechanism of the cube prevents a single(odd) exchange of pieces within and between the groups.
+
+_Note: I will consider this point in the final section of this calculation._
+
+\begin{equation}
+P\_{Center} \cdot P\_{Corner} \cdot P\_{Edge} \cdot P\_{Factor} = \text{Total Permutation of Cube}
+\end{equation}
+
+### Center pieces
+
+A simple dismantling of the classic rubiks cube shows us that the center pieces are rigidly connected to each other, though each of the faces of these pieces are permitted to rotate about their connections. Thus there is only a single way in which the
