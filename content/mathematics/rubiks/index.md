@@ -15,12 +15,21 @@ tags:
   - Probabilities
   - Sport
   - Speed cubing
+  - God's number
+  - Cube
+  - Cube Lovers
+  -
 _links:
   - https://www.jaapsch.net/puzzles/patents/gb1344259.pdf
   - https://en.wikipedia.org/wiki/Rubik%27s_Cube
   - https://cjme.springeropen.com/articles/10.1186/s10033-018-0269-7
   - https://web.mit.edu/sp.268/www/rubik.pdf
   - https://ocw.mit.edu/courses/es-268-the-mathematics-in-toys-and-games-spring-2010/
+  - https://diglib.eg.org/bitstream/handle/10.2312/eurova20191119/019-023.pdf?sequence=1&isAllowed=n
+  - https://arxiv.org/abs/0803.3435
+  - http://www.math.rwth-aachen.de/~Martin.Schoenert/Cube-Lovers/michael_reid__superflip_requires_20_face_turns.html
+  - https://www.chrome.com/cubelab#experiment
+  - http://kociemba.org/cube.htm
 # img01: img/01_Menace/01_tic-tac-toe.png   #front home page card image
 # img02:                                    #main card on blog post image
 # img03:                                    #Additional just in case.
@@ -93,4 +102,16 @@ P\_{Center} \cdot P\_{Corner}\cdot P\_{Edge}\cdot P\_{Factor} &= \text{Total Per
 1 \times 8! \times 3^{7} \times 12! \times 2^{11} \times \frac{1}{2} &= 43,252,003,274,489,856,000
 \end{align}
 
-These are the number of ways that a legal rubiks cube can be present in.
+These are the number of ways that a legal rubiks cube can be present in. That is how a legal cube could be arranged by rotation of its faces by $90^o , 180^o $. A cube could be dismantled and put back together in a haphazard manner, this would mean that the $P\_{Factor}$ term is neglected and thus the "Total Arrangments of a cube" will be two times "Total Permutation of Cube". These cubes may or may not be solvable.
+
+### Visualisation
+
+This section is taken directly from wikipedia and is very well written.
+
+{{<blockquote>}}
+To put this into perspective, if one had one standard-sized Rubik's Cube for each permutation, one could cover the Earth's surface 275 times, or stack them in a tower 261 light-years high.
+{{</blockquote>}}
+
+Just a massive number I know.
+
+I hope to go through the above mentioned links and even explain how the mechanism of the cube forces even permutations only in a future post.
