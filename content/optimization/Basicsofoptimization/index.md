@@ -21,6 +21,7 @@ tags:
 _links:
   - https://web.stanford.edu/~boyd/cvxbook/
   - https://cvxopt.org/
+  - http://www.seas.ucla.edu/~vandenbe/publications/mlbook.pdf
 # img01: img/01_Menace/01_tic-tac-toe.png   #front home page card image
 # img02:                                    #main card on blog post image
 # img03:                                    #Additional just in case.
