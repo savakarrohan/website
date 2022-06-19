@@ -20,7 +20,7 @@ tags:
   - cvxopt
 _links:
   - https://web.stanford.edu/~boyd/cvxbook/
-  -
+  - https://cvxopt.org/
 # img01: img/01_Menace/01_tic-tac-toe.png   #front home page card image
 # img02:                                    #main card on blog post image
 # img03:                                    #Additional just in case.
@@ -89,3 +89,7 @@ and aerospace engineering. Optimization is used for problems arising in network
 design and operation, finance, supply chain management, scheduling, and many
 other areas. The list of applications is still steadily expanding.
 {{</blockquote>}}
+
+## Future positions
+
+In future posts I will attempt to provide justice to the class of problems known as Convex optimization problems, using methods such as interior point methods. Interior points methods appear to solve practical problems and are very reliable. I will attempt to provide heuristic for the the general non-convex problems while explaining similar heuristics for local optimization and bounds for global optimization. During the entirety of this blog posts I will be using the python library called cvxopt created and maintained by Martin Andersen (martin.skovgaard.andersen@gmail.com), Joachim Dahl (dahl.joachim@gmail.com), and Lieven Vandenberghe (vandenbe@ee.ucla.edu).
