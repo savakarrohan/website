@@ -7,7 +7,7 @@
                 <ul class="nav flex-column">
                     {{ range .Site.Data.homeLink.homeNavigation}}
                     <li class="nav-item mb-2">
-                        <a href="{{ .link }}" class="nav-link p-0 text-white">
+                        <a href="{{ .link  | relURL}}" class="nav-link p-0 text-white">
                             {{ .name }}
                         </a>
                     </li>
