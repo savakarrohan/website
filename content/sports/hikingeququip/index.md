@@ -1,5 +1,5 @@
 ---
-title: "Hikingeququip"
+title: "Hiking Equipment"
 Date: 2022-07-05T23:02:08+05:30
 Draft: false
 layout: #select between art, contact, engineering, mathematics, optimization, sports
