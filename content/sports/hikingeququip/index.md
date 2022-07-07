@@ -6,9 +6,18 @@ layout: #select between art, contact, engineering, mathematics, optimization, sp
 attention: #A short sentence quirky about it.
 inspiration: #Inspiration
 author: Savakar Rohan #if any collaboration
-shortDescription: # Description
-tags: # Add as many tags as possible; Mechanical Computer Learning tic-tac-toe noughts&crosses Donald Mitchie noughts&crosses
-_links: #related links for the same; https://www.mscroggs.co.uk/blog/ https://people.csail.mit.edu/brooks/idocs/matchbox.pdf http://cs.williams.edu/~freund/cs136-073/GardnerHexapawn.pdf
+shortDescription: Hiking equipment have to be durable, light weight and most importantly safe for the treachorous terrain and weather that nature has to offer us at the foot of  mountains. I do my best to explain calculations and design considerations in preparing tent stakes.
+tags:
+  - Sports
+  - Hiking
+  - Draw out
+  - Force
+  - Screw
+  - Tent
+  - Stakes
+_links:
+  - https://www.engineeringtoolbox.com/wood-screws-allowable-withdrawal-load-d_1815.html
+  -
 img01: #all images so easier to write ; img/01_Menace/01_tic-tac-toe.png
 img02:
 img03:
