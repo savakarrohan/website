@@ -3,7 +3,7 @@ title: "Hiking Equipment"
 Date: 2022-07-05T23:02:08+05:30
 Draft: false
 layout: #select between art, contact, engineering, mathematics, optimization, sports
-attention: #A short sentence quirky about it.
+attention: Hiking equipment have to be durable, light weight and most importantly safe for the treachorous terrain and weather that nature has to offer us at the foot of  mountains. I do my best to explain calculations and design considerations in preparing tent stakes.
 inspiration: #Inspiration
 author: Savakar Rohan #if any collaboration
 shortDescription: Hiking equipment have to be durable, light weight and most importantly safe for the treachorous terrain and weather that nature has to offer us at the foot of  mountains. I do my best to explain calculations and design considerations in preparing tent stakes.
