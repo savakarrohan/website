@@ -75,4 +75,32 @@ Assumptions:
 - Failure of the ground material such as coning out is not considered.
 - All stakes are sufficiently separated.
 
-Thus the load on each stake will be $ 100N $. For a rod of 5mm diameter we get that the minimum length should be $ 26.7cm $ Similarly calculating for the 3 fin stake we get that the minimum length of the stake should be $16.6cm $. **Though the masses are comparable of both the designs, its important to note that the fin shape will be shorter which will definetly help in packaging the equipment**
+Thus the load on each stake will be $ 100N $. For a rod of 5mm diameter we get that the minimum length should be $ 26.7cm $ Similarly calculating for the 3 fin stake we get that the minimum length of the stake should be $16.6cm $. **Though the masses are comparable of both the designs, its important to note that the fin shape will be shorter which will definetly help in packaging the equipment.** This is clear from the formula but a quantification makes this discussion more valid. Handling a 30cm stake would be much more difficult as compared to handling a short 15cm stake. I imagine the scenario as follows, its much easier to keep a 15cm scale in a pencil box whereas the 30cm scale which I kept in my backpack always broke (Fractured).
+
+{{< postimage "AllStakesIso.png" "Fig 02: CAD modeled stakes" >}}
+
+### Case 02: Column buckling during impact load
+
+This case is considered to prevent the equipment from being damaged during usage. An impact load from a hammer should not cause significant column buckling deflection. We shall quantify which material would be a better choice.
+
+- Max Deflection: 3mm
+- Hammer mass: 1kg
+- Impact height: 150mm
+
+Using the Buckling formula (shown below) we can estimate the buckling load required for the two materials. This load is for when one end is fixed while the other end is free.
+
+\begin{equation}
+P\_{critical,buckling}= \frac{\pi^2 E I}{(2L)^2}
+\end{equation}
+
+Applying the above formulae we see that the critical load for Titanium $(2069N)$ is twice more than that for Aluminium $(1252N)$.
+
+As the loading is an impact load from the hammer it is important to find the value of this load also. This relation is calculated from equating the energy imparted by the hammer to the workdone by material when deformed. The relation is shown below for completion where the symbols have appropriate meanings. upon calculating for the two materials the impact force is $250 \pm 30 N$.
+
+\begin{equation}
+F\_{impact} = W\left( 1 + \sqrt{1 + \frac{2 h A E}{W L}} \right)
+\end{equation}
+
+As is clear the impact load is an order less than that for buckling failure. Thus the device will not fail on impact, but we also notice that the failure criteria for titanium is 8 times the impact load therefore will be less likely to bend significantly. (Evident from comparing stiffness also). Thus the choice of titanium is better when we want long lasting equipment. Further buisness constraints such as manufacturing cost makes this material less viable.
+
+The above discussion might seem redundant, as via intuition we know that as area increases so does the pry out force. We also very well know that titanium is stiffer and thus is the material of choice. The scope of this discussion was to quantify the values and provide some basic calculations which might be applied when designing such equipment and I hope it provides an insight.
