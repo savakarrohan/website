@@ -22,17 +22,57 @@ _links:
 img01: #all images so easier to write ; img/01_Menace/01_tic-tac-toe.png
 img02:
 img03:
-math: False
+math: True
 ---
 
-Trekking and camping equipment are essential for any adventure in the mountains. The unpredictable weather, and harsh conditions make it difficult to find food, shelter and water. The weather forces us to be prepared for snow, rain and even the sun. In this environment it is important to have safe, reliable and light equipment to carry around.
+# Trekking equipment
 
-Having trekked overnight for the first time in the Himalayas last week, I noticed small and simple innovations which make this sport safer. From the numerous straps in a backpack, to the ease of packing an entire tent and even the materials chosen for the shoes, metal components and types of stoves used.
+It's a cold monsoon afternoon, you are up in the mountains, and you have carried your backpack and equipment for well over 6 hours and you are planning to set camp at this flat spot you found beside the stream. You slowly unpack the bag and notice your equipment, you check if they are suitable for this location, and you ponder over how did you manage to carry so much that morning. Then you slowly notice the tiny designs which seem so important, from the numerous straps on a backpack to that groove on your shoes to strap your spikes and even how compact you can pack your tent.
 
-What mostly caught my eye was the tent stakes. It was baffling to me that 10 such spokes could easily hold down a tent in conditions of windy gusts. These components allow us to feel safe despite the weather. Now there are various types of these stakes available in the market, they are essentially poles stuck in to the ground. We use similar devices in other situations such as anchor bolts to hold down street light poles on the sides of roads. These bolts should hold down the various loads that such a structure can experience such as lift and shear loads from gusty winds.
+I recently went on a trek to the Himalayas and had goosebumps all over me as I took in the marvelous views on my way to the Beas Kund, a lake near the seven sisters' peak where Veda Vyasa is said to have written the epic poem Mahabharath. On my way to the peak, I was continuously astonished by the simple and innovative methods to carry equipment. They folded into position as though they were puzzles to be solved. As they took shape it was artistic like Origami, taking shape from a nearly flat surface.
 
-The various methods in which this component can fail, is material failure (Tensile, Shear) or the surface it is embedded in might "breakout", "split", or "blowout". The calculations for material failure is rather straight forward, but higher factors of safety should be considered for the surface because of irregularities in the surface.
+I found myself interested in how these pieces of equipment were made, from the shoes which didn't transfer shock from jumping on to jagged rocks to the tent pipes folding neatly when packing but not buckling during gusty winds to even the various types of stakes I found. In this post, I wish to do justice by commenting on the various design consideration to partake in when designing these stakes.
 
-_Note: One can introduce factors such as "Pattern: How close the next stake is", "Edge Distance: to compensate for how close the edge is to the stake", "Material homogenity: To consider homogenous materials" amongst other factors for a more accurate modelling of the system but a time saving technique would be to consider a higher factor of safety._
+## Step 1: Loading
 
-#
+The first critical step in any design process is answering the question of how this piece will be used. In our mechanical sense, this would mean what are the possible loading conditions of this piece. The various types of loading can be broken down into Tensile, Compressive, Shear, or Bending. These are usually broken down further into the various components represented by $ F_i $ and $ M_i $. Now for a tent, there are a few loads that the tent experience, these being lift loads (Wind swooshes below the tent surface and the pressure differences pushes the tent upwards) and shear loads as the gusty wind blows across the face of the tent (The typical formula $ F = \frac{1}{2} \rho v^2 L_d A\_{Projected} $ quantifies and explains the nature of this load).
+
+## Step 2: Design (Topology)
+
+There are many design methodologies for creating any device but I would like to decide the general shape of the stake. Now clearly, the amount of surface the part is exposed to in the surface would be proportional to the pull-out force of the stake. Thus clearly, the length of the stake and the number of fins will affect its quality. At the same time, the increase in the number of fins will make it difficult to penetrate the surface. What about the surface? Could something be accommodated for surfaces like sand and snow? At the same time could cost-cutting measures be accommodated for manufacturing?
+
+For surfaces like sand whose physics is determined by multi-granular physics (A story for a different post). From experience we know it behaves very much like a fluid and I would like to point to a design that takes advantage of this property.
+
+The holes in the main structure allow the grains to form a rope between the two ends and prevent the stake from being pulled out.
+
+The larger surface area of the screw types allows for a greater pull-out force in surfaces such as snow.
+
+## Step 3: Deciding on shape (Dimension) and material
+
+There's a very interesting case in structural mechanics that says in beam bending the stress is proportional to the geometry of the material and not dependent on the material itself $ \(\frac{M_bc}{I}\) $. This is a very important point in itself. In this discussion, I will look into two cases of failure, and decide the appropriate dimensions for two types of stakes, the rod-type and the one with 3 fins.
+
+In hindsight, for the below calculations, I will require material properties and will take appropriate values for Aluminium and Titanium which I will specify later.
+
+## Design considerations
+
+{{< postimage "ColouredImage.png" "Fig 01: stakes" >}}
+
+### Case 01: Pry out force
+
+Either of the stakes should not pry out during usage in the rocky soil medium by lift loads caused by wind.
+Lift load:
+
+- The number of stakes for a tent: 8
+- Pry out formula (Empirical): $ 1.6x10^4 (S.G) D L $
+- The specific gravity of soil: 2.75
+- D, Dimension characteristic of cross section: $ 4\* Area / Perimeter $
+- Wind lift load: 800 N (_Calculated from the formula explained in the paragraph above._)
+
+Assumptions:
+
+- Only 75% of the entire length of stake is in medium,
+- The angle of stake doesn't affect pry out,
+- Failure of the ground material such as coning out is not considered.
+- All stakes are sufficiently separated.
+
+Thus the load on each stake will be $ 100N $. For a rod of 5mm diameter we get that the minimum length should be $ 26.7cm $ Similarly calculating for the 3 fin stake we get that the minimum length of the stake should be $16.6cm $. **Though the masses are comparable of both the designs, its important to note that the fin shape will be shorter which will definetly help in packaging the equipment**
