@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html><head>
+    <meta name="viewport" content="width=device-width, initial scale=1.0" charset="utf-8">
+    <meta name="descripton" content=" A portfolio page of the mechanical engineer Rohan Savakar">
+    <meta http-equiv="pragma" content="no-cache" />
+    <title>Rohan Savakar's Blog and Portfolio</title>
+
+    
+    <link rel="stylesheet" href='/website/css/bootstrap.css'>
+    
+    <link rel="stylesheet" href="Bootstrap/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href='/website/css/style.css' type="text/css">
+
+    
+    
+
+    
+    
+    <script type="text/javascript" src='/website/js/bootstrap.js'></script>
+
+    
+    
+    
+
+
+    
+    <script src='/website/js/app.js'></script>
+
+    
+    
+
+
+<script>
+    MathJax = {
+        tex: {
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true
+        },
+        options: {
+            skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+        }
+    };
+
+    window.addEventListener('load', (event) => {
+        document.querySelectorAll("mjx-container").forEach(function (x) {
+            x.parentElement.classList += 'has-jax'
+        })
+    });
+
+</script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script type="text/javascript" id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+</head><body>
+<div id="navigationBar">
+    <nav class="navbar navbar-dark navbar-expand-md bg-dark sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/website">
+                Savakar Rohan</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Rohan Savakar</h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/website/">
+                                Home
+                            </a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/website/sports">
+                                Sports
+                            </a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/website/academic">
+                                Academic
+                            </a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/website/contact">
+                                Contact
+                            </a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/website/mathematics">
+                                Mathematics
+                            </a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/website/optimization">
+                                Optimization
+                            </a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/website/engineering">
+                                Engineering
+                            </a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/website/art">
+                                Art
+                            </a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+</div><main>
+<div class="container blog-post">
+    <div class="p-4 p-md-5 mb-4 mt-4 text-white rounded bg-dark">
+        <div class="col-md-6 px-0">
+            <h1 class="display-1 fst-italic">Basics of optimization</h1>
+            <p>Savakar Rohan</p>
+            <p class="lead my-3">A fixed amount of resources always causes us to act in a specific manner. Is it possible to quantify what would make us the most efficient user of our resources? How do we go about writing the problem in mathematical terms? Do these problems always fall under a certain group?</p>
+            <p class="lead mb-0"><a href="#" class="text-white fw-bold">Continue reading...</a></p>
+        </div>
+    </div>
+
+    <div class="row g-5">
+        <div class="col-md-8">
+            <h4 class="pb-4 mb-4 fst-italic border-bottom">
+                Inspired by the MATLAB logo being a peak which I could slice off with a plane
+            </h4>
+            <h1 class="blog-post-title">Basics of optimization</h1>
+            <p class="blog-post-meta fst-italic text-black-50">June 18, 2022 reading time :
+                5 minutes</p>
+
+            <article class="blog-post">
+                <p>Optimization is a problem important in everyones lives, we all have fixed amount of resources and intend to do the best we can with this available resource. These resources could be in the form of money, valuable resources like wood, material for projects and most importantly time (A very important asset I have only just realised). These resources are limited and we wish to use them appropiately to gain the most &ldquo;utility&rdquo;.</p>
+<h2 id="what-is-it-mathematical-explanation">What is it (mathematical explanation)</h2>
+<p>I would love to extract this excerpt from the book cvxbook available at a link mentioned on the right, a compilation by Steven Boyd and Lieven Vandenberghe, which is curated from lecture slides for an appropiate course. This being a website project for me to better understand and write for academic and teaching purposes I would love to write in my own words.</p>
+<p>The optimization problem is posed as finiding that value for a vector $\boldsymbol{x} \in \boldsymbol{R}^n$ such that a function $f_0: \boldsymbol{R}^n \rightarrow \boldsymbol{R}$ evaluated at $\boldsymbol{x}$ attains the least value, after giving further rules that $f_i: \boldsymbol{R}^n \rightarrow \boldsymbol{R}$ evaluated at $\boldsymbol{x}$ is less than a noted value $ b_i \in \boldsymbol{R}$. Another point to be included is that $\boldsymbol{x} \in \boldsymbol{S}$ where $\boldsymbol{S}$ is a set defined on $\boldsymbol{R}^n$. Gathering the above passage in to a simpler math notation we have the following.</p>
+<p>\begin{align}
+&amp;\text{minimize} &amp; &amp;f_0(x) &amp; \\
+&amp;\text{subject to} &amp; &amp;f_i(x) \leq b_i, &amp; i = 1,&hellip;,m.
+\end{align}</p>
+<p>The above problem is the general optimization problem where $\boldsymbol{x} = (x_1, &hellip;, x_n)$ is the <em>optimization variable</em> with $f_0$ being the <em>objective function</em> and $f_i$ being the <em>constraint functions</em>. The vector $\boldsymbol{x^*}$ is <em>optimal</em> when it satisties all the conditions as well as attaining the minimum value for the objective function.</p>
+<p>Here the <em>objective function</em> is thought of as the cost of choosing the variable $\boldsymbol{x}$ while it maintains strict rules for the variable $\boldsymbol{x}$ defined under the <em>constraint functions</em>. This problem could be linear or nonlinear depending on the objective function, having said this I would like take this moment to point that although many of problems have different methods of solving depending on linearity of the problem defined. Optimization problems are typically differentiated by the convexity of the problem, which we will define in a sooner post.</p>
+<h2 id="applications">Applications</h2>
+<p>Again I would like to attempt to explain this in my own words;</p>
+<p>Energy is a physical quantity which every system tends to minimize whenever it attains its equilibrium position. The objective function is exactly the same, its a representation of the requirement that the energy of the system is minimized. Though I haven&rsquo;t explicity stated it, we believe that the entire system is defined by and only the variable $\boldsymbol{x}$. There are no other possible values to explain the state mentioned above, this is a limitation to the solution of the problem defined above but its important to notice when the set is well defined the <em>optimal solution</em> can consider the whole system. The <em>constraint functions</em> represents other design/requirments that the optimal solution to satisfy, this could be explained as safety factor considerations in mechanical engineering, while it could be a limit on bank money for a financial problem.</p>
+<p>Some extracts from the Boyd book are attached below;</p>
+<div class=" bg-light border-start border-3 border-dark ps-3">
+    <p>
+        
+In portfolio optimization, for example, we seek the best way to invest some
+capital in a set of n assets. The variable x i represents the investment in the ith
+asset, so the vector x ∈ R n describes the overall portfolio allocation across the set of
+assets. The constraints might represent a limit on the budget (i.e., a limit on the
+total amount to be invested), the requirement that investments are nonnegative
+(assuming short positions are not allowed), and a minimum acceptable value of
+expected return for the whole portfolio. The objective or cost function might be
+a measure of the overall risk or variance of the portfolio return. In this case,
+the optimization problem (1.1) corresponds to choosing a portfolio allocation that
+minimizes risk, among all possible allocations that meet the firm requirements.
+
+    </p>
+</div>
+<div class=" bg-light border-start border-3 border-dark ps-3">
+    <p>
+        
+Another example is device sizing in electronic design, which is the task of choos-
+ing the width and length of each device in an electronic circuit. Here the variables
+represent the widths and lengths of the devices. The constraints represent a va-
+riety of engineering requirements, such as limits on the device sizes imposed by
+the manufacturing process, timing requirements that ensure that the circuit can
+operate reliably at a specified speed, and a limit on the total area of the circuit. A
+common objective in a device sizing problem is the total power consumed by the
+circuit. The optimization problem (1.1) is to find the device sizes that satisfy the
+design requirements (on manufacturability, timing, and area) and are most power
+efficient.
+
+    </p>
+</div>
+<div class=" bg-light border-start border-3 border-dark ps-3">
+    <p>
+        
+An amazing variety of practical problems involving decision making (or system
+design, analysis, and operation) can be cast in the form of a mathematical opti-
+mization problem, or some variation such as a multicriterion optimization problem.
+Indeed, mathematical optimization has become an important tool in many areas.
+It is widely used in engineering, in electronic design automation, automatic con-
+trol systems, and optimal design problems arising in civil, chemical, mechanical,
+and aerospace engineering. Optimization is used for problems arising in network
+design and operation, finance, supply chain management, scheduling, and many
+other areas. The list of applications is still steadily expanding.
+
+    </p>
+</div>
+<h2 id="future-positions">Future positions</h2>
+<p>In future posts I will attempt to provide justice to the class of problems known as Convex optimization problems, using methods such as interior point methods. Interior points methods appear to solve practical problems and are very reliable. I will attempt to provide heuristic for the the general non-convex problems while explaining similar heuristics for local optimization and bounds for global optimization. During the entirety of this blog posts I will be using the python library called cvxopt created and maintained by Martin Andersen (<a href="mailto:martin.skovgaard.andersen@gmail.com">martin.skovgaard.andersen@gmail.com</a>), Joachim Dahl (<a href="mailto:dahl.joachim@gmail.com">dahl.joachim@gmail.com</a>), and Lieven Vandenberghe (<a href="mailto:vandenbe@ee.ucla.edu">vandenbe@ee.ucla.edu</a>).</p>
+
+            </article>
+        </div>
+
+        <div class="col-md-4">
+            <div class="position-sticky" style="top: 2rem;">
+                <div class="p-4 mb-3 bg-light rounded">
+                    <h4 class="fst-italic">Short description</h4>
+                    <p class="mb-0">
+                        A fixed amount of resources always causes us to act in a specific manner. Is it possible to quantify which manner would make us the most efficient user of our resources? How do we go about writing the problem in mathematical terms? Do these problems always fall under a certain group?
+                    </p>
+                </div>
+
+                <div class="p-4">
+                    <h4 class="fst-italic">Tags</h4>
+                    <ol class="list-unstyled mb-0">
+                        
+                        <a class="tag" href="/website/tags/optimization">Optimization</a>
+                        
+                        <a class="tag" href="/website/tags/convexity">Convexity</a>
+                        
+                        <a class="tag" href="/website/tags/affine">Affine</a>
+                        
+                        <a class="tag" href="/website/tags/affine-states">Affine states</a>
+                        
+                        <a class="tag" href="/website/tags/general-optimization">General optimization</a>
+                        
+                        <a class="tag" href="/website/tags/non-linear-optimization">Non linear optimization</a>
+                        
+                        <a class="tag" href="/website/tags/convex-optimization">Convex optimization</a>
+                        
+                        <a class="tag" href="/website/tags/steven-boyd">Steven Boyd</a>
+                        
+                        <a class="tag" href="/website/tags/vandenberghe">Vandenberghe</a>
+                        
+                        <a class="tag" href="/website/tags/cvxopt">cvxopt</a>
+                        
+                    </ol>
+                </div>
+
+                <div class="p-4">
+                    <h4 class="fst-italic">Further reading</h4>
+                    <ol class="list-group list-group-numbered text-break">
+                        
+                        <li class=" list-group-item">
+                            <a class="tag" href="https://web.stanford.edu/~boyd/cvxbook/">https://web.stanford.edu/~boyd/cvxbook/</a>
+                        </li>
+                        
+                        <li class=" list-group-item">
+                            <a class="tag" href="https://cvxopt.org/">https://cvxopt.org/</a>
+                        </li>
+                        
+                        <li class=" list-group-item">
+                            <a class="tag" href="http://www.seas.ucla.edu/~vandenbe/publications/mlbook.pdf">http://www.seas.ucla.edu/~vandenbe/publications/mlbook.pdf</a>
+                        </li>
+                        
+                        <li class=" list-group-item">
+                            <a class="tag" href="http://www.seas.ucla.edu/~vandenbe/publications/coneprog.pdf">http://www.seas.ucla.edu/~vandenbe/publications/coneprog.pdf</a>
+                        </li>
+                        
+                        <li class=" list-group-item">
+                            <a class="tag" href="https://cvxopt.org/userguide/index.html">https://cvxopt.org/userguide/index.html</a>
+                        </li>
+                        
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="row d-flex justify-content-between">
+            
+            
+            
+        </div>
+    </div>
+</div>
+
+        </main>
+<div class="container-fluid bg-dark text-white">
+    <footer class="py-4">
+        <div class="row justify-content-around">
+            <div class="col-6">
+                <h5>Section</h5>
+                <ul class="nav flex-column">
+                    
+                    <li class="nav-item mb-2">
+                        <a href="/website/" class="nav-link p-0 text-white">
+                            Home
+                        </a>
+                    </li>
+                    
+                    <li class="nav-item mb-2">
+                        <a href="/website/sports" class="nav-link p-0 text-white">
+                            Sports
+                        </a>
+                    </li>
+                    
+                    <li class="nav-item mb-2">
+                        <a href="/website/academic" class="nav-link p-0 text-white">
+                            Academic
+                        </a>
+                    </li>
+                    
+                    <li class="nav-item mb-2">
+                        <a href="/website/contact" class="nav-link p-0 text-white">
+                            Contact
+                        </a>
+                    </li>
+                    
+                    <li class="nav-item mb-2">
+                        <a href="/website/mathematics" class="nav-link p-0 text-white">
+                            Mathematics
+                        </a>
+                    </li>
+                    
+                    <li class="nav-item mb-2">
+                        <a href="/website/optimization" class="nav-link p-0 text-white">
+                            Optimization
+                        </a>
+                    </li>
+                    
+                    <li class="nav-item mb-2">
+                        <a href="/website/engineering" class="nav-link p-0 text-white">
+                            Engineering
+                        </a>
+                    </li>
+                    
+                    <li class="nav-item mb-2">
+                        <a href="/website/art" class="nav-link p-0 text-white">
+                            Art
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+            <div class="col-3">
+                <form>
+                    <h5>Subscribe to my Posts</h5>
+                    <p>Monthly digest of whats new and exciting from me.</p>
+                    <div class="d-flex w-100 gap-2">
+                        <label for="newsletter1" class="visually-hidden">Email address</label>
+                        <input id="newsletter1" type="text" class="form-control w-50" placeholder="Email address">
+                        <button class="btn btn-primary btn-dark text-break" type="button">Subscribe</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="d-flex justify-content-around py-4 my-4 border-top">
+            <p>&copy; 2022 Rohan Savakar, All rights reserved. <br> All images designed by <a class="link-light"
+                    href='https://www.freepik.com'>freepik</a></p>
+            <ul class="list-unstyled d-flex">
+                <a class="text-white fs-3" href="https://twitter.com/RohanSavakar" target="_blank">
+                    <i class="bi-twitter"></i>
+                </a>
+                <li class="ms-3">
+                    <a class="text-white fs-3" href="https://github.com/savakarrohan">
+                        <i class="bi-github"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</div></body>
+
+</html>

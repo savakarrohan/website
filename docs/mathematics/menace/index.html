@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html><head>
+    <meta name="viewport" content="width=device-width, initial scale=1.0" charset="utf-8">
+    <meta name="descripton" content=" A portfolio page of the mechanical engineer Rohan Savakar">
+    <meta http-equiv="pragma" content="no-cache" />
+    <title>Rohan Savakar's Blog and Portfolio</title>
+
+    
+    <link rel="stylesheet" href='/website/css/bootstrap.css'>
+    
+    <link rel="stylesheet" href="Bootstrap/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href='/website/css/style.css' type="text/css">
+
+    
+    
+
+    
+    
+    <script type="text/javascript" src='/website/js/bootstrap.js'></script>
+
+    
+    
+    
+
+
+    
+    <script src='/website/js/app.js'></script>
+
+    
+    
+
+</head><body>
+<div id="navigationBar">
+    <nav class="navbar navbar-dark navbar-expand-md bg-dark sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/website">
+                Savakar Rohan</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Rohan Savakar</h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/website/">
+                                Home
+                            </a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/website/sports">
+                                Sports
+                            </a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/website/academic">
+                                Academic
+                            </a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/website/contact">
+                                Contact
+                            </a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/website/mathematics">
+                                Mathematics
+                            </a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/website/optimization">
+                                Optimization
+                            </a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/website/engineering">
+                                Engineering
+                            </a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/website/art">
+                                Art
+                            </a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+</div><main>
+<div class="container blog-post">
+    <div class="p-4 p-md-5 mb-4 mt-4 text-white rounded bg-dark">
+        <div class="col-md-6 px-0">
+            <h1 class="display-1 fst-italic">MENACE #01</h1>
+            <p>Savakar Rohan</p>
+            <p class="lead my-3">A Mechanical computer to learn the game of tic-tac toe</p>
+            <p class="lead mb-0"><a href="#" class="text-white fw-bold">Continue reading...</a></p>
+        </div>
+    </div>
+
+    <div class="row g-5">
+        <div class="col-md-8">
+            <h4 class="pb-4 mb-4 fst-italic border-bottom">
+                Inspired by Matthew Scroggs Blog
+            </h4>
+            <h1 class="blog-post-title">MENACE #01</h1>
+            <p class="blog-post-meta fst-italic text-black-50">April 16, 2022 reading time :
+                7 minutes</p>
+
+            <article class="blog-post">
+                <p>The Matchbox Educable Noughts and Crosses Engine (<strong>MENACE</strong>)is a mechanical computer made from 304 matchboxes designed and built by Donald Mitchie in 1961.</p>
+<h2 id="what">What?</h2>
+<p>During world war II when computers were essentially mechanical devices and women crunching numbers, there was an interest to make a computer to learn by itself. Eager to demonstrate artificial intelligence through &ldquo;trial and error learning&rdquo; in simple mental games he constructed a device out of matchboxes to test out his algorithms.</p>
+<h2 id="the-idea">The Idea</h2>
+<p>Copying one of his paper&rsquo;s paragraph [2] :</p>
+<div class=" bg-light border-start border-3 border-dark ps-3">
+    <p>
+        
+"A reason for being interested in games is that they provide a microcosm of intellectual activity in general. Those thought processes which we regard as being specifically human accomplishments learning from experience, inductive reasoning, argument by analogy, the formation and testing of new hypotheses, and so on are brought into play even by simple games of mental skill. The problem of artificial intelligence consists in the reduction of these processes to the elementary operations of arithmetic and logic."
+
+    </p>
+</div>
+<p>One can imagine the game as a &ldquo;sequential decision&rdquo; process, the sequence of choices made during the various &ldquo;states&rdquo; of the game result in an outcome. The outcome then being assigned a value, (much like John Nash&rsquo;s theory of utility) which determines how fruitful the previous desicions are. As the device learns <em>from past experiences</em> it receives <em>reinforcements</em> on what is good and bad.</p>
+<h3 id="analogy-to-teaching-a-puppy">Analogy to teaching a puppy</h3>
+<p>I love to take the analogy of teaching a puppy to sit. In the following paragraphs I will consider the dog as a subject. A typical method of teaching involves repeating the words &ldquo;sit&rdquo; and helping the dog complete the action by forcibly moving his body. As the action is completed we <strong>reward</strong> him with a treat or <strong>reprimand</strong> him if he fails to repeat the action. The algorithm descibed in MENACE does the same, where the choices of sequential decisions are rewarded if they result in a beneficial outcome. At the same time the choices are reprimanded given that the outcome is non beneficial.</p>
+<h3 id="states">States</h3>
+<p>I find this topic a little more challenging to explain. Lets use the noughts and crosses (tic-tac-toe) as an example itself. Let there be two players playing the game with their legend as in the picture below. Let us consider a more drastic situation in which the game is being played. Assume that the two players have never met each other (thus they don&rsquo;t have any psychological knowledge or previous experience). Both the players are now in two separate rooms with zero contact with each other. A third room consists of the game board, each player on their turn exits their room and enters the game room and plays their move following which they return back to their respective rooms awaiting the oppositions move.</p>
+<p>From the situation described above we define a state of the board as the state of the board just before a decision a player plays his move. The below picture describes one such game being played.</p>
+<!-- <figure class = "figure">
+    <img src="{{basic.png | relURL}}" width = "1000px" class = "figure-img img-fluid rounded"/>
+    <figcaption class="figure-caption">Tic tac toe states</figcaption>
+</figure> -->
+
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-6">
+            <figure class=" figure ">
+                <a href="/website/mathematics/menace/states.png">
+                    
+                    <img class=" figure-img img-fluid rounded" src="/website/mathematics/menace/states_hu194e4c5fb1a73d93fed97ce85032d2a6_19397_2048x0_resize_box_3.png" alt="Fig 01: Possible states of a hypothetical game" />
+                    
+                </a>
+                <figcaption class="figure-caption text-center">Fig 01: Possible states of a hypothetical game</figcaption>
+            </figure>
+        </div>
+    </div>
+</div>
+<p>In the diagram above player01 plays first always and player02 notices the state of the board without the green box, he/she eventually plays their move in response to state:&ndash; at the green box.</p>
+<p>Suppose player02 is yet to play in state:03(horrible punctuation), the player believes that the best possible option for him is with index (1,1) i.e the green box in state:04 and plays that option. On questioning why player plays that option he answers &ldquo;state:03 presented me with the best option to play, I could either do index(1,1), index(1,3), index(2,1) or index(3,3) (essentially all empty spots). They decide to attempt index(3,3) because they notice the game can be ended favourably within the next state(though notably other indices might help in the same too)&rdquo;. I bring to notice that the player informs about the most recent state and doesn&rsquo;t point out about previous state events having majorly affecting his decision.</p>
+<p>The point made above is important, though sounding trivial it is important to understand that we put more emphasis on the most recent states than any previous states. In other words the most recent event is more important than historic events. Again taking an excerpt from the article by Dr Michie:</p>
+<div class=" bg-light border-start border-3 border-dark ps-3">
+    <p>
+        
+"This picture of trial-and-error learning uses the concepts and terminology of the experimental psychologist. Observations on animals agree with common sense in suggesting that the strength of reinforcement becomes less as we proceed backwards along the loop from the terminus towards the origin. The more recent the choice in the sequence, the greater its probable share of responsibility for the outcome. This provides an adequate conceptual basis for a trial-and-error learning device, provided that the total number of choice-points which can be encountered is small enough for them to be individually listed."
+
+    </p>
+</div>
+<p>But learning over several thousands if not millions of such games will help in learning over all the possible situations of the game as this small weightage slowly creeps to astonishing values in the initial stages of the game. One might ask, how can we teach the computer to learn over a thousand games rather than a million? Or When do we know that the computer has learnt sufficiently enough? These are important questions to be answered hopefully in a future post. Lastly I bring to notice that this is backed by previous studies of animals and commonsense, there might be different mathematical methods to improve this value based jump we have considered here. (needs input)</p>
+<h2 id="a-revision-so-far">A revision so far</h2>
+<p>Lets take a moment to revise everything so far;</p>
+<ul>
+<li>We learnt that we tend to <strong>reward</strong> good behaviour while <strong>reprimanding</strong> unfavourable ones.</li>
+<li>We learnt that states represent the factors which influence a person&rsquo;s decision.</li>
+<li>We learnt that the most recent state effects the players future decisions more than previous states</li>
+</ul>
+<h2 id="the-actual-computer">The actual computer</h2>
+<p>Now to the dirty business, how shall we make this computer?
+We saw that the states are independent of each other and primarily a decision is based purely out of the most recent state, so it makes sense to have <strong>containers</strong> of all the possible states. How will we make a decision for the next possible state? Let&rsquo;s imagine that each of these <strong>containers</strong> contained the probability of making a future decision. That is they contained information regarding which move to play next in the form of probability. Now how shall we represent this probability, the answer is quite simple, let&rsquo;s pick differently <strong>coloured balls</strong> from a closed bad.</p>
+<p>The computer is slowly taking shape, we now have to add the algorithm for rewarding and reprimanding.
+The game ends in three scenarios for any player { Win, Loss, Draw}. When we win let&rsquo;s reward the computer by increasing the probability that he wins again. How do we do that you may ask? Well we can do two things, either increase the number of the particular colour balls in the bag or decrease the other colour balls in the bag. Just because it&rsquo;s rewarding let&rsquo;s choose the first option of <strong>increase coloured ball count</strong>. Though I would be very happy to study what happens in the other scenario too. At the same time let&rsquo;s reprimand the computer by <strong>removing balls of the particular colour</strong> whenever it loses. Draw seem to be a slightly more positive reward than a negative one, so lets reward it by increasing the coloured ball count but not by as much if it had won.</p>
+<p>The architecture of the computer has been deveolped now what are the equivalent parts?</p>
+<ul>
+<li>The containers are matchboxes.</li>
+<li>The balls are different coloured beads representing each move possible.</li>
+<li>A reward is provided by increasing the number of coloured bead by 3.
+<ul>
+<li>For example: if in state:01 the red bead is picked and the game is terminated as a win by MENACE we add 3 additional red coloured beads in the respective state:01 box.</li>
+</ul>
+</li>
+<li>Similarly a reprimand is accomodated by decreasing the number of coloured bead by 1.
+<ul>
+<li>For example: if in state:01 a green bead is picked and the game terminates as a loss to MENACE we remove the picked green bead from the respective state:01 box.</li>
+</ul>
+</li>
+<li>A draw is considered by rewarding the coloured bead by 1.</li>
+</ul>
+
+            </article>
+        </div>
+
+        <div class="col-md-4">
+            <div class="position-sticky" style="top: 2rem;">
+                <div class="p-4 mb-3 bg-light rounded">
+                    <h4 class="fst-italic">Short description</h4>
+                    <p class="mb-0">
+                        Reward the computer by increasing balls count if favourable, while reprimand it by removing balls if the state is not good.
+                    </p>
+                </div>
+
+                <div class="p-4">
+                    <h4 class="fst-italic">Tags</h4>
+                    <ol class="list-unstyled mb-0">
+                        
+                        <a class="tag" href="/website/tags/mechanical">Mechanical</a>
+                        
+                        <a class="tag" href="/website/tags/computer">Computer</a>
+                        
+                        <a class="tag" href="/website/tags/learning">Learning</a>
+                        
+                        <a class="tag" href="/website/tags/tic-tac-toe">tic-tac-toe</a>
+                        
+                        <a class="tag" href="/website/tags/noughtscrosses">noughts&amp;crosses</a>
+                        
+                        <a class="tag" href="/website/tags/donald">Donald</a>
+                        
+                        <a class="tag" href="/website/tags/mitchie">Mitchie</a>
+                        
+                        <a class="tag" href="/website/tags/noughtscrosses">noughts&amp;crosses</a>
+                        
+                    </ol>
+                </div>
+
+                <div class="p-4">
+                    <h4 class="fst-italic">Further reading</h4>
+                    <ol class="list-group list-group-numbered text-break">
+                        
+                        <li class=" list-group-item">
+                            <a class="tag" href="https://www.mscroggs.co.uk/blog/">https://www.mscroggs.co.uk/blog/</a>
+                        </li>
+                        
+                        <li class=" list-group-item">
+                            <a class="tag" href="https://people.csail.mit.edu/brooks/idocs/matchbox.pdf">https://people.csail.mit.edu/brooks/idocs/matchbox.pdf</a>
+                        </li>
+                        
+                        <li class=" list-group-item">
+                            <a class="tag" href="http://cs.williams.edu/~freund/cs136-073/GardnerHexapawn.pdf">http://cs.williams.edu/~freund/cs136-073/GardnerHexapawn.pdf</a>
+                        </li>
+                        
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="row d-flex justify-content-between">
+            
+            
+            
+            <div class="card mb-3 col-md-5">
+                <div class="row g-0">
+                    <div class="col-md-4 bg-black rounded-3">
+                        
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">MENACE #02 </h5>
+                            <p class="card-text">A Mechanical computer to learn the game of tic-tac toe</p>
+                            <a href="https://savakarrohan.github.io/website/mathematics/menace02/" class="btn btn-primary stretched-link">Go somewhere</a>
+                            <p class="card-text"><small class="text-muted">reading time :
+                                    5 minutes</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+        </main>
+<div class="container-fluid bg-dark text-white">
+    <footer class="py-4">
+        <div class="row justify-content-around">
+            <div class="col-6">
+                <h5>Section</h5>
+                <ul class="nav flex-column">
+                    
+                    <li class="nav-item mb-2">
+                        <a href="/website/" class="nav-link p-0 text-white">
+                            Home
+                        </a>
+                    </li>
+                    
+                    <li class="nav-item mb-2">
+                        <a href="/website/sports" class="nav-link p-0 text-white">
+                            Sports
+                        </a>
+                    </li>
+                    
+                    <li class="nav-item mb-2">
+                        <a href="/website/academic" class="nav-link p-0 text-white">
+                            Academic
+                        </a>
+                    </li>
+                    
+                    <li class="nav-item mb-2">
+                        <a href="/website/contact" class="nav-link p-0 text-white">
+                            Contact
+                        </a>
+                    </li>
+                    
+                    <li class="nav-item mb-2">
+                        <a href="/website/mathematics" class="nav-link p-0 text-white">
+                            Mathematics
+                        </a>
+                    </li>
+                    
+                    <li class="nav-item mb-2">
+                        <a href="/website/optimization" class="nav-link p-0 text-white">
+                            Optimization
+                        </a>
+                    </li>
+                    
+                    <li class="nav-item mb-2">
+                        <a href="/website/engineering" class="nav-link p-0 text-white">
+                            Engineering
+                        </a>
+                    </li>
+                    
+                    <li class="nav-item mb-2">
+                        <a href="/website/art" class="nav-link p-0 text-white">
+                            Art
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+            <div class="col-3">
+                <form>
+                    <h5>Subscribe to my Posts</h5>
+                    <p>Monthly digest of whats new and exciting from me.</p>
+                    <div class="d-flex w-100 gap-2">
+                        <label for="newsletter1" class="visually-hidden">Email address</label>
+                        <input id="newsletter1" type="text" class="form-control w-50" placeholder="Email address">
+                        <button class="btn btn-primary btn-dark text-break" type="button">Subscribe</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="d-flex justify-content-around py-4 my-4 border-top">
+            <p>&copy; 2022 Rohan Savakar, All rights reserved. <br> All images designed by <a class="link-light"
+                    href='https://www.freepik.com'>freepik</a></p>
+            <ul class="list-unstyled d-flex">
+                <a class="text-white fs-3" href="https://twitter.com/RohanSavakar" target="_blank">
+                    <i class="bi-twitter"></i>
+                </a>
+                <li class="ms-3">
+                    <a class="text-white fs-3" href="https://github.com/savakarrohan">
+                        <i class="bi-github"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</div></body>
+
+</html>
