@@ -49,5 +49,20 @@ body::-webkit-scrollbar {
   display: grid;
   grid-template-rows: masonry;
 }
+
+.fig-bg-img {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center; /* horizontal center */
+  align-items: center; /* vertical center */
+
+  width: 100%; /* Thumbnail dimensions. */
+  height: 100%;
+}
+
+.fig-bg-img > img {
+  height: 100%;
+}
 /* Bootstrap elements changed here */
 /* Do in second version */
