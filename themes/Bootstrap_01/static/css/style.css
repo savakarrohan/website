@@ -64,5 +64,10 @@ body::-webkit-scrollbar {
 .fig-bg-img > img {
   height: 100%;
 }
+
+.TopPost::before {
+  content: " ";
+  background: rgba(0, 0, 0, 0.9);
+}
 /* Bootstrap elements changed here */
 /* Do in second version */

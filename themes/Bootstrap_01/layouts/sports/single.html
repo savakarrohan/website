@@ -1,15 +1,16 @@
 {{ define "main" }}
 <div class="container blog-post">
-    <div class="p-4 p-md-5 mb-4 mt-4 text-dark bg-black bg-opacity-25 rounded "
-        style='background-image: url({{ "img/tot.png" | relURL }});'>
-        <div class="col-md-6 px-0 ">
-            <h1 class="display-1 fst-italic">{{ .Params.title }}</h1>
-            <p>{{.Params.author}}</p>
-            <p class="lead my-3">{{ .Params.attention }}</p>
-            <p class="lead mb-0"><a href="#" class="text-dark fw-bold">Continue reading...</a></p>
+    <div class="TopPost rounded"
+        style='background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url({{ "img/tot.png" | relURL }});'>
+        <div class="p-4 p-md-5 mb-4 mt-4 text-white opacity-100 rounded ">
+            <div class="col-md-6 px-0 ">
+                <h1 class="display-1 fst-italic">{{ .Params.title }}</h1>
+                <p>{{.Params.author}}</p>
+                <p class="lead my-3">{{ .Params.attention }}</p>
+                <p class="lead mb-0"><a href="#" class="text-white fw-bold">Continue reading...</a></p>
+            </div>
         </div>
     </div>
-
     <div class="row g-5">
         <div class="col-md-8">
             <h4 class="pb-4 mb-4 fst-italic border-bottom">
