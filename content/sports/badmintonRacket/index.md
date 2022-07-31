@@ -7,8 +7,19 @@ attention: Badminton is the fastest racket sport in the world, what are the rece
 inspiration: Weight saving on the connector between the handle and shaft of the latest Astrox series by Yonex.
 author: Savakar Rohan #if any collaboration
 shortDescription: # Description
-tags: # Add as many tags as possible; Mechanical Computer Learning tic-tac-toe noughts&crosses Donald Mitchie noughts&crosses
-_links: #related links for the same; https://www.mscroggs.co.uk/blog/ https://people.csail.mit.edu/brooks/idocs/matchbox.pdf http://cs.williams.edu/~freund/cs136-073/GardnerHexapawn.pdf
+tags:
+  - sports
+  - Badminton
+  - Racket
+  - Carbon fibers
+  - Design
+  - Technical sports
+  - Squash
+  - materials
+_links:
+  - https://in.victorsport.com/badmintonaz/3632/Racket-basic-introduction-Part-2-shaftcap-grip-end-cap
+  - https://in.victorsport.com/badmintonaz/3614/Racket-design-thinking-starts-from-How-the-game-is-played
+  - https://odr.chalmers.se/handle/20.500.12380/250350
 img01: #all images so easier to write ; img/01_Menace/01_tic-tac-toe.png
 img02:
 img03:
@@ -72,6 +83,7 @@ Control can be easily assesed as the amount a racket twists about it's shaft. Re
 
 {{< postimage "Rolled.png" "Fig 02: Rolled Type" >}}
 {{< postimage "Coiled.png" "Fig 03: Coiled Type" >}}
+{{< postimage "Table.png" "Table 01: Comparision" >}}
 
 ### Aerodynamic resistance
 
