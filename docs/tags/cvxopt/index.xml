@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>cvxopt on Savakar Rohan&#39;s site</title>
-    <link>https://savakarrohan.github.io/website/tags/cvxopt/</link>
+    <link>https://savakarrohan.github.io/tags/cvxopt/</link>
     <description>Recent content in cvxopt on Savakar Rohan&#39;s site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 18 Jun 2022 07:40:50 +0530</lastBuildDate><atom:link href="https://savakarrohan.github.io/website/tags/cvxopt/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 18 Jun 2022 07:40:50 +0530</lastBuildDate><atom:link href="https://savakarrohan.github.io/tags/cvxopt/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Basics of optimization</title>
-      <link>https://savakarrohan.github.io/website/optimization/basicsofoptimization/</link>
+      <link>https://savakarrohan.github.io/optimization/basicsofoptimization/</link>
       <pubDate>Sat, 18 Jun 2022 07:40:50 +0530</pubDate>
       
-      <guid>https://savakarrohan.github.io/website/optimization/basicsofoptimization/</guid>
+      <guid>https://savakarrohan.github.io/optimization/basicsofoptimization/</guid>
       <description>Optimization is a problem important in everyones lives, we all have fixed amount of resources and intend to do the best we can with this available resource. These resources could be in the form of money, valuable resources like wood, material for projects and most importantly time (A very important asset I have only just realised). These resources are limited and we wish to use them appropiately to gain the most &amp;ldquo;utility&amp;rdquo;.</description>
     </item>
     

@@ -2,36 +2,36 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Mathematics on Savakar Rohan&#39;s site</title>
-    <link>https://savakarrohan.github.io/website/mathematics/</link>
+    <link>https://savakarrohan.github.io/mathematics/</link>
     <description>Recent content in Mathematics on Savakar Rohan&#39;s site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 07 Jun 2022 22:48:18 +0530</lastBuildDate><atom:link href="https://savakarrohan.github.io/website/mathematics/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 07 Jun 2022 22:48:18 +0530</lastBuildDate><atom:link href="https://savakarrohan.github.io/mathematics/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Rubiks</title>
-      <link>https://savakarrohan.github.io/website/mathematics/rubiks/</link>
+      <link>https://savakarrohan.github.io/mathematics/rubiks/</link>
       <pubDate>Tue, 07 Jun 2022 22:48:18 +0530</pubDate>
       
-      <guid>https://savakarrohan.github.io/website/mathematics/rubiks/</guid>
+      <guid>https://savakarrohan.github.io/mathematics/rubiks/</guid>
       <description>Introduction The Rubik&amp;rsquo;s cube is a 3D - combination puzzle invented in 1974 by a Hungarian sculptor and professor of architecture Ernő Rubik. It was initially called the magic cube but as the toy slowly became an international sensation the business men marketed it as the Rubik&amp;rsquo;s cube, a much more catchy name. The cube comprises of 6 faces of different color where a solved state of the cube occurs when all the faces of the cube has a single color.</description>
     </item>
     
     <item>
       <title>MENACE #02</title>
-      <link>https://savakarrohan.github.io/website/mathematics/menace02/</link>
+      <link>https://savakarrohan.github.io/mathematics/menace02/</link>
       <pubDate>Wed, 20 Apr 2022 17:42:09 +0530</pubDate>
       
-      <guid>https://savakarrohan.github.io/website/mathematics/menace02/</guid>
+      <guid>https://savakarrohan.github.io/mathematics/menace02/</guid>
       <description>Lets take a moment to revise everything so far;
  We learnt that we tend to reward good behaviour while reprimanding unfavourable ones. We learnt that states represent the factors which influence a person&amp;rsquo;s decision. We learnt that the most recent state effects the players future decisions more than previous states  The actual computer Now to the dirty business, how shall we make this computer? We saw that the states are independent of each other and primarily a decision is based purely out of the most recent state, so it makes sense to have containers of all the possible states.</description>
     </item>
     
     <item>
       <title>MENACE #01</title>
-      <link>https://savakarrohan.github.io/website/mathematics/menace/</link>
+      <link>https://savakarrohan.github.io/mathematics/menace/</link>
       <pubDate>Sat, 16 Apr 2022 17:42:09 +0530</pubDate>
       
-      <guid>https://savakarrohan.github.io/website/mathematics/menace/</guid>
+      <guid>https://savakarrohan.github.io/mathematics/menace/</guid>
       <description>The Matchbox Educable Noughts and Crosses Engine (MENACE)is a mechanical computer made from 304 matchboxes designed and built by Donald Mitchie in 1961.
 What? During world war II when computers were essentially mechanical devices and women crunching numbers, there was an interest to make a computer to learn by itself. Eager to demonstrate artificial intelligence through &amp;ldquo;trial and error learning&amp;rdquo; in simple mental games he constructed a device out of matchboxes to test out his algorithms.</description>
     </item>

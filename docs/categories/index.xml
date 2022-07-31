@@ -2,9 +2,9 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Savakar Rohan&#39;s site</title>
-    <link>https://savakarrohan.github.io/website/categories/</link>
+    <link>https://savakarrohan.github.io/categories/</link>
     <description>Recent content in Categories on Savakar Rohan&#39;s site</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://savakarrohan.github.io/website/categories/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://savakarrohan.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
