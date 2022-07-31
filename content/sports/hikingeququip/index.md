@@ -19,7 +19,7 @@ _links:
   - https://www.engineeringtoolbox.com/wood-screws-allowable-withdrawal-load-d_1815.html
   - http://www.thetentlab.com/stakesncords/stakesandcords.html
   - https://www.outdoorgearlab.com/topics/camping-and-hiking/best-tent-stakes
-img01: #all images so easier to write ; img/01_Menace/01_tic-tac-toe.png
+img01:
 img02:
 img03:
 math: True
