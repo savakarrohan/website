@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Group Theory on Savakar Rohan&#39;s site</title>
-    <link>https://savakarrohan.github.io/tags/group-theory/</link>
+    <link>https://savakarrohan.github.io/website/tags/group-theory/</link>
     <description>Recent content in Group Theory on Savakar Rohan&#39;s site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 07 Jun 2022 22:48:18 +0530</lastBuildDate><atom:link href="https://savakarrohan.github.io/tags/group-theory/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 07 Jun 2022 22:48:18 +0530</lastBuildDate><atom:link href="https://savakarrohan.github.io/website/tags/group-theory/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Rubiks</title>
-      <link>https://savakarrohan.github.io/mathematics/rubiks/</link>
+      <link>https://savakarrohan.github.io/website/mathematics/rubiks/</link>
       <pubDate>Tue, 07 Jun 2022 22:48:18 +0530</pubDate>
       
-      <guid>https://savakarrohan.github.io/mathematics/rubiks/</guid>
+      <guid>https://savakarrohan.github.io/website/mathematics/rubiks/</guid>
       <description>Introduction The Rubik&amp;rsquo;s cube is a 3D - combination puzzle invented in 1974 by a Hungarian sculptor and professor of architecture Ernő Rubik. It was initially called the magic cube but as the toy slowly became an international sensation the business men marketed it as the Rubik&amp;rsquo;s cube, a much more catchy name. The cube comprises of 6 faces of different color where a solved state of the cube occurs when all the faces of the cube has a single color.</description>
     </item>
     

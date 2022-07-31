@@ -1,4 +1,4 @@
-baseURL = "https://savakarrohan.github.io/"
+baseURL = "https://savakarrohan.github.io/website"
 languageCode = "en-us"
 title = "Savakar Rohan's site"
 theme = "Bootstrap_01"
@@ -8,7 +8,7 @@ publishDir = "docs"
 
 
 # Switching on relative URLS
-relativeURLs = true
+# relativeURLs = true
 
 
 # To not escape all html in markdown.
