@@ -65,7 +65,7 @@
             {{ with .PrevInSection}}
             <div class="card mb-3 col-md-5">
                 <div class="row g-0">
-                    <div class="col-md-4 bg-black rounded-3">
+                    <div class="col-md-4 rounded-3">
                         {{ $image := .Resources.GetMatch "tot*"}}
                         {{ $image := $image.Fill "500x900 Bottom"}}
                         <img src="{{$image.RelPermalink}}" class="img-fluid rounded-start" alt="...">
@@ -86,7 +86,7 @@
             {{ with .NextInSection}}
             <div class="card mb-3 col-md-5">
                 <div class="row g-0">
-                    <div class="col-md-4 bg-black rounded-3">
+                    <div class="col-md-4 rounded-3">
                         {{ $image := .Resources.GetMatch "tot*"}}
                         {{ $image := $image.Fill "500x900 Bottom"}}
                         <img src="{{$image.RelPermalink}}" class="img-fluid rounded-start" alt="...">
