@@ -6,7 +6,7 @@ layout: #select between art, contact, engineering, mathematics, optimization, sp
 attention: A fixed amount of resources always causes us to act in a specific manner. Is it possible to quantify what would make us the most efficient user of our resources? How do we go about writing the problem in mathematical terms? Do these problems always fall under a certain group?
 inspiration: Inspired by the MATLAB logo being a peak which I could slice off with a plane
 author: Savakar Rohan #if any collaboration
-shortDescription: A fixed amount of resources always causes us to act in a specific manner. Is it possible to quantify which manner would make us the most efficient user of our resources? How do we go about writing the problem in mathematical terms? Do these problems always fall under a certain group?
+shortDescription: A fixed amount of resources always causes us to act in a specific manner. Is it possible to quantify what action would make us the most efficient user of our resources? How do we go about writing the problem in mathematical terms? Do these problems always fall under a certain group?
 tags:
   - Optimization
   - Convexity
@@ -27,7 +27,7 @@ _links:
 math: True
 ---
 
-Optimization is a problem important in everyones lives, we all have fixed amount of resources and intend to do the best we can with this available resource. These resources could be in the form of money, valuable resources like wood, material for projects and most importantly time (A very important asset I have only just realised). These resources are limited and we wish to use them appropiately to gain the most "utility".
+Optimization is a problem important in everyones lives, we all have fixed amount of resources and intend to do the best we can with this available resource. These resources could be in the form of money, valuable resources like wood, material for projects and most importantly time (A very important asset I have only just realised). These resources are limited and we wish to use them appropiately to gain the most "utility" (I'd like to point to Daniel Bernoulli and John Forbes Nash Jr. some of the famous users of this term).
 
 ## What is it (mathematical explanation)
 
