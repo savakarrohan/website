@@ -1,5 +1,5 @@
 ---
-title: "Badminton Racket peculiar design"
+title: "Badminton Rackets' peculiar design"
 Date: 2022-06-21T14:31:07+05:30
 Draft: false
 layout: #select between art, contact, engineering, mathematics, optimization, sports

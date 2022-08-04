@@ -3,7 +3,7 @@
     {{ $image := .Resources.GetMatch "tot*"}}
     {{ $imageFit := $image.Fill "1400x600 Bottom"}}
     <div class="TopPost rounded"
-        style='background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url({{$imageFit.RelPermalink}});'>
+        style='background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url({{$imageFit.RelPermalink}});'>
         <div class="p-4 p-md-5 mb-4 mt-4 text-white opacity-100 rounded ">
             <div class="col-md-6 px-0 ">
                 <h1 class="display-1 fst-italic">{{ .Params.title }}</h1>
@@ -66,7 +66,9 @@
             <div class="card mb-3 col-md-5">
                 <div class="row g-0">
                     <div class="col-md-4 bg-black rounded-3">
-                        {{/* <img src="..." class="img-fluid rounded-start" alt="..."> */}}
+                        {{ $image := .Resources.GetMatch "tot*"}}
+                        {{ $image := $image.Fill "500x900 Bottom"}}
+                        <img src="{{$image.RelPermalink}}" class="img-fluid rounded-start" alt="...">
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
@@ -85,7 +87,9 @@
             <div class="card mb-3 col-md-5">
                 <div class="row g-0">
                     <div class="col-md-4 bg-black rounded-3">
-                        {{/* <img src="..." class="img-fluid rounded-start" alt="..."> */}}
+                        {{ $image := .Resources.GetMatch "tot*"}}
+                        {{ $image := $image.Fill "500x900 Bottom"}}
+                        <img src="{{$image.RelPermalink}}" class="img-fluid rounded-start" alt="...">
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
