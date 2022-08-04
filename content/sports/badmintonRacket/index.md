@@ -6,7 +6,7 @@ layout: #select between art, contact, engineering, mathematics, optimization, sp
 attention: Badminton is the fastest racket sport in the world, what are the recent design innovations which allow players to find that extra 0.01 milliseconds improvement in their performance.
 inspiration: Weight saving on the connector between the handle and shaft of the latest Astrox series by Yonex.
 author: Savakar Rohan #if any collaboration
-shortDescription: # Description
+shortDescription: Sports provide a fertile ground for innovation, the rules bring out creativity amongst enthusiasts to find that one factor to influence their victory. In the world of badminton, this discussion hopes to give ideas to qualify factors such as stiffness for the design and development of high performance rackets.
 tags:
   - sports
   - Badminton
@@ -77,7 +77,7 @@ Now now, theres another way to increase the deflection, intuitively its obvious 
 
 I gave barely enough justice for the physics during a shot above(_I would like to reiterate that the situation is a dynamic situation and Inertial factors play a much more important role_). These might be valid for power but what about control and aerodynamic drag? In this section I hope to bring light to some design considerations which have been implemented for the same situations.
 
-### Control
+### Control Group
 
 Control can be easily assesed as the amount a racket twists about it's shaft. Remember this is twist and that is related to the torsional stiffness which is related to the angle of deviation and not the normal stiffness (?). During a shot if the racket deflects by a greater angle the shuttle will not move as intended by the player. Therefore it's important that the torsional stiffness is maximised. These can be achieved by the orientation of the plies that the composites are placed in the shaft. Another technique of varying stiffness is during manufacturing of the shaft, the fibers could be rolled or could be coiled. The diagrams shown below represent these techniques during manufacturing.
 
